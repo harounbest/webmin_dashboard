@@ -1,0 +1,829 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="HTML5 Template" />
+    <meta name="description" content="Webmin - Bootstrap 4 & Angular 5 Admin Dashboard Template" />
+    <meta name="author" content="potenzaglobalsolutions.com" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+    <title>Webmin - Bootstrap 4 & Angular 5 Admin Dashboard Template</title>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" />
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900">
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+</head>
+
+<body>
+    <div class="wrapper">
+        <!--=================================
+ preloader -->
+        <div id="pre-loader">
+            <img src="images/pre-loader/loader-01.svg" alt="">
+        </div>
+        <!--=================================
+ preloader -->
+        <!--=================================
+ header start-->
+        <nav class="admin-header navbar navbar-default col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+            <!-- logo -->
+            <div class="text-left navbar-brand-wrapper">
+                <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo-dark.png" alt="" ></a>
+                <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-icon-dark.png" alt=""></a>
+            </div>
+            <!-- Top bar left -->
+            <ul class="nav navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a id="button-toggle" class="button-toggle-nav inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu ti-align-right"></i></a>
+                </li>
+                <li class="nav-item">
+                    <div class="search">
+                        <a class="search-btn not_click" href="javascript:void(0);"></a>
+                        <div class="search-box not-click">
+                            <input type="text" class="not-click form-control" placeholder="Search" value="" name="search">
+                            <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <!-- top bar right -->
+            <ul class="nav navbar-nav ml-auto">
+                <li class="nav-item fullscreen">
+                    <a id="btnFullscreen" href="#" class="nav-link"><i class="ti-fullscreen"></i></a>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link top-nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="ti-bell"></i>
+        <span class="badge badge-danger notification-status"> </span>
+      </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-big dropdown-notifications">
+                        <div class="dropdown-header notifications">
+                            <strong>Notifications</strong>
+                            <span class="badge badge-pill badge-warning">05</span>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a href="#" class="dropdown-item">New registered user <small class="float-right text-muted time">Just now</small> </a>
+                        <a href="#" class="dropdown-item">New invoice received <small class="float-right text-muted time">22 mins</small> </a>
+                        <a href="#" class="dropdown-item">Server error report<small class="float-right text-muted time">7 hrs</small> </a>
+                        <a href="#" class="dropdown-item">Database report<small class="float-right text-muted time">1 days</small> </a>
+                        <a href="#" class="dropdown-item">Order confirmation<small class="float-right text-muted time">2 days</small> </a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown ">
+                    <a class="nav-link top-nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true"> <i class=" ti-view-grid"></i> </a>
+                    <div class="dropdown-menu dropdown-menu-right dropdown-big">
+                        <div class="dropdown-header">
+                            <strong>Quick Links</strong>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <div class="nav-grid">
+                            <a href="#" class="nav-grid-item"><i class="ti-files text-primary"></i><h5>New Task</h5></a>
+                            <a href="#" class="nav-grid-item"><i class="ti-check-box text-success"></i><h5>Assign Task</h5></a>
+                        </div>
+                        <div class="nav-grid">
+                            <a href="#" class="nav-grid-item"><i class="ti-pencil-alt text-warning"></i><h5>Add Orders</h5></a>
+                            <a href="#" class="nav-grid-item"><i class="ti-truck text-danger "></i><h5>New Orders</h5></a>
+                        </div>
+                    </div>
+                </li>
+                <li class="nav-item dropdown mr-30">
+                    <a class="nav-link nav-pill user-avatar" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <img src="images/profile-avatar.jpg" alt="avatar">
+      </a>
+                    <div class="dropdown-menu dropdown-menu-right">
+                        <div class="dropdown-header">
+                            <div class="media">
+                                <div class="media-body">
+                                    <h5 class="mt-0 mb-0">Michael Bean</h5>
+                                    <span>michael-bean@mail.com</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="text-secondary ti-reload"></i>Activity</a>
+                        <a class="dropdown-item" href="#"><i class="text-success ti-email"></i>Messages</a>
+                        <a class="dropdown-item" href="#"><i class="text-warning ti-user"></i>Profile</a>
+                        <a class="dropdown-item" href="#"><i class="text-dark ti-layers-alt"></i>Projects <span class="badge badge-info">6</span> </a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#"><i class="text-info ti-settings"></i>Settings</a>
+                        <a class="dropdown-item" href="#"><i class="text-danger ti-unlock"></i>Logout</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+        <!--=================================
+ header End-->
+        <!--=================================
+ Main content -->
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Left Sidebar start-->
+                <div class="side-menu-fixed">
+                    <div class="scrollbar side-menu-bg">
+                        <ul class="nav navbar-nav side-menu" id="sidebarnav">
+                            <!-- menu item Dashboard-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard">
+                                    <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">Dashboard</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="dashboard" class="collapse" data-parent="#sidebarnav">
+                                    <li> <a href="index.html">Dashboard 01</a> </li>
+                                    <li> <a href="index-02.html">Dashboard 02</a> </li>
+                                    <li> <a href="index-03.html">Dashboard 03</a> </li>
+                                    <li> <a href="index-04.html">Dashboard 04</a> </li>
+                                    <li> <a href="index-05.html">Dashboard 05</a> </li>
+                                </ul>
+                            </li>
+                            <!-- menu title -->
+                            <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Components </li>
+                            <!-- menu item Elements-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#elements">
+                                    <div class="pull-left"><i class="ti-palette"></i><span class="right-nav-text">Elements</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="elements" class="collapse" data-parent="#sidebarnav">
+                                    <li><a href="accordions.html">Accordions</a></li>
+                                    <li><a href="alerts.html">Alerts</a></li>
+                                    <li><a href="button.html">Button</a></li>
+                                    <li><a href="colorpicker.html">Colorpicker</a></li>
+                                    <li><a href="dropdown.html">Dropdown</a></li>
+                                    <li><a href="lists.html">lists</a></li>
+                                    <li><a href="modal.html">modal</a></li>
+                                    <li><a href="nav.html">nav</a></li>
+                                    <li><a href="nicescroll.html">nicescroll</a></li>
+                                    <li><a href="pricing-table.html">pricing table</a></li>
+                                    <li><a href="ratings.html">ratings</a></li>
+                                    <li><a href="date-picker.html">date picker</a></li>
+                                    <li><a href="tabs.html">tabs</a></li>
+                                    <li><a href="typography.html">typography</a></li>
+                                    <li><a href="popover-tooltips.html">Popover tooltips</a></li>
+                                    <li><a href="progress.html">progress</a></li>
+                                    <li><a href="switch.html">switch</a></li>
+                                    <li><a href="sweetalert2.html">sweetalert2</a></li>
+                                    <li><a href="touchspin.html">touchspin</a></li>
+                                </ul>
+                            </li>
+                            <!-- menu item calendar-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#calendar-menu">
+                                    <div class="pull-left"><i class="ti-calendar"></i><span class="right-nav-text">calendar</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="calendar-menu" class="collapse" data-parent="#sidebarnav">
+                                    <li> <a href="calendar.html">Events Calendar </a> </li>
+                                    <li> <a href="calendar-list.html">List Calendar</a> </li>
+                                </ul>
+                            </li>
+                            <!-- menu item todo-->
+                            <li>
+                                <a href="todo-list.html"><i class="ti-menu-alt"></i><span class="right-nav-text">Todo list</span> </a>
+                            </li>
+                            <!-- menu item chat-->
+                            <li>
+                                <a href="chat-page.html"><i class="ti-comments"></i><span class="right-nav-text">Chat </span></a>
+                            </li>
+                            <!-- menu item mailbox-->
+                            <li>
+                                <a href="mail-box.html"><i class="ti-email"></i><span class="right-nav-text">Mail box</span> <span class="badge badge-pill badge-warning float-right mt-1">HOT</span> </a>
+                            </li>
+                            <!-- menu item Charts-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#chart">
+                                    <div class="pull-left"><i class="ti-pie-chart"></i><span class="right-nav-text">Charts</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="chart" class="collapse" data-parent="#sidebarnav">
+                                    <li> <a href="chart-js.html">Chart.js</a> </li>
+                                    <li> <a href="chart-morris.html">Chart morris </a> </li>
+                                    <li> <a href="chart-sparkline.html">Chart Sparkline</a> </li>
+                                </ul>
+                            </li>
+                            <!-- menu font icon-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#font-icon">
+                                    <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">font icon</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="font-icon" class="collapse" data-parent="#sidebarnav">
+                                    <li> <a href="fontawesome-icon.html">font Awesome</a> </li>
+                                    <li> <a href="themify-icons.html">Themify icons</a> </li>
+                                    <li> <a href="weather-icon.html">Weather icons</a> </li>
+                                </ul>
+                            </li>
+                            <!-- menu title -->
+                            <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Widgets, Forms & Tables </li>
+                            <!-- menu item Widgets-->
+                            <li>
+                                <a href="widgets.html"><i class="ti-blackboard"></i><span class="right-nav-text">Widgets</span> <span class="badge badge-pill badge-danger float-right mt-1">59</span> </a>
+                            </li>
+                            <!-- menu item Form-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#Form">
+                                    <div class="pull-left"><i class="ti-files"></i><span class="right-nav-text">Form & Editor</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="Form" class="collapse" data-parent="#sidebarnav">
+                                    <li> <a href="editor.html">Editor</a> </li>
+                                    <li> <a href="editor-markdown.html">Editor Markdown</a> </li>
+                                    <li> <a href="form-input.html">Form input</a> </li>
+                                    <li> <a href="form-validation-jquery.html">form validation jquery</a> </li>
+                                    <li> <a href="form-wizard.html">form wizard</a> </li>
+                                    <li> <a href="form-repeater.html">form repeater</a> </li>
+                                    <li> <a href="input-group.html">input group</a> </li>
+                                    <li> <a href="toastr.html">toastr</a> </li>
+                                </ul>
+                            </li>
+                            <!-- menu item table -->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#table">
+                                    <div class="pull-left"><i class="ti-layout-tab-window"></i><span class="right-nav-text">data table</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="table" class="collapse" data-parent="#sidebarnav">
+                                    <li> <a href="data-html-table.html">Data html table</a> </li>
+                                    <li> <a href="data-local.html">Data local</a> </li>
+                                    <li> <a href="data-table.html">Data table</a> </li>
+                                </ul>
+                            </li>
+                            <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">More Pages</li>
+                            <!-- menu item Custom pages-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#custom-page">
+                                    <div class="pull-left"><i class="ti-file"></i><span class="right-nav-text">Custom pages</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="custom-page" class="collapse" data-parent="#sidebarnav">
+                                    <li> <a href="projects.html">projects</a> </li>
+                                    <li> <a href="project-summary.html">Projects summary</a> </li>
+                                    <li> <a href="profile.html">profile</a> </li>
+                                    <li> <a href="app-contacts.html">App contacts</a> </li>
+                                    <li> <a href="contacts.html">Contacts</a> </li>
+                                    <li> <a href="file-manager.html">file manager</a> </li>
+                                    <li> <a href="invoice.html">Invoice</a> </li>
+                                    <li> <a href="blank.html">Blank page</a> </li>
+                                    <li> <a href="layout-container.html">layout container</a> </li>
+                                    <li> <a href="error.html">Error</a> </li>
+                                    <li> <a href="faqs.html">faqs</a> </li>
+                                </ul>
+                            </li>
+                            <!-- menu item Authentication-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#authentication">
+                                    <div class="pull-left"><i class="ti-id-badge"></i><span class="right-nav-text">Authentication</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="authentication" class="collapse" data-parent="#sidebarnav">
+                                    <li> <a href="login.html">login</a> </li>
+                                    <li> <a href="register.html">register</a> </li>
+                                    <li> <a href="lockscreen.html">Lock screen</a> </li>
+                                </ul>
+                            </li>
+                            <!-- menu item maps-->
+                            <li>
+                                <a href="maps.html"><i class="ti-location-pin"></i><span class="right-nav-text">maps</span> <span class="badge badge-pill badge-success float-right mt-1">06</span></a>
+                            </li>
+                            <!-- menu item timeline-->
+                            <li>
+                                <a href="timeline.html"><i class="ti-panel"></i><span class="right-nav-text">timeline</span> </a>
+                            </li>
+                            <!-- menu item Multi level-->
+                            <li>
+                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#multi-level">
+                                    <div class="pull-left"><i class="ti-layers"></i><span class="right-nav-text">Multi level Menu</span></div>
+                                    <div class="pull-right"><i class="ti-plus"></i></div>
+                                    <div class="clearfix"></div>
+                                </a>
+                                <ul id="multi-level" class="collapse" data-parent="#sidebarnav">
+                                    <li>
+                                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#auth">Level item 1<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                                        <ul id="auth" class="collapse">
+                                            <li>
+                                                <a href="javascript:void(0);" data-toggle="collapse" data-target="#login">Level item 1.1<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                                                <ul id="login" class="collapse">
+                                                    <li>
+                                                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#invoice">level item 1.1.1<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                                                        <ul id="invoice" class="collapse">
+                                                            <li> <a href="#">level item 1.1.1.1</a> </li>
+                                                            <li> <a href="#">level item 1.1.1.2</a> </li>
+                                                        </ul>
+                                                    </li>
+                                                </ul>
+                                            </li>
+                                            <li> <a href="#">level item 1.2</a> </li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#error">level item 2<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                                        <ul id="error" class="collapse">
+                                            <li> <a href="#">level item 2.1</a> </li>
+                                            <li> <a href="#">level item 2.2</a> </li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+                <!-- Left Sidebar End-->
+                <!--=================================
+ Main content -->
+                <!--=================================
+wrapper -->
+                <div class="content-wrapper">
+                    <div class="page-title">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <h4 class="mb-0"> Dashboard 02</h4>
+                            </div>
+                            <div class="col-sm-6">
+                                <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right">
+                                    <li class="breadcrumb-item"><a href="#" class="default-color">Home</a></li>
+                                    <li class="breadcrumb-item active">Dashboard 02</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- widgets -->
+                    <div class="row">
+                        <div class="col-12 mb-30 ">
+                            <div class="card card-statistics h-100">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-4">
+                                            <h5 class="card-title">Yearly analytics </h5>
+                                            <div id="morris-bar-stacked" style="height: 290px;"></div>
+                                        </div>
+                                        <div class="col-xl-4 mt-4 mt-xl-0">
+                                            <h5 class="card-title">Best selling items</h5>
+                                            <ul class="list-unstyled">
+                                                <li class="mb-20">
+                                                    <div class="media">
+                                                        <div class="position-relative">
+                                                            <img class="img-fluid mr-15 avatar-small" src="images/item/01.png" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-0">Car dealer  <span class="float-right text-danger"> 8,561 </span>  </h6>
+                                                            <p>Automotive WordPress Theme </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="divider dotted mt-20"></div>
+                                                </li>
+                                                <li class="mb-20">
+                                                    <div class="media">
+                                                        <div class="position-relative clearfix">
+                                                            <img class="img-fluid mr-15 avatar-small" src="images/item/02.png" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-0">Webster   <span class="float-right text-warning"> 6,213 </span>  </h6>
+                                                            <p>Multi-purpose HTML5 Template </p>
+                                                        </div>
+                                                    </div>
+                                                    <div class="divider dotted mt-20"></div>
+                                                </li>
+                                                <li>
+                                                    <div class="media">
+                                                        <div class="position-relative">
+                                                            <img class="img-fluid mr-15 avatar-small" src="images/item/03.png" alt="">
+                                                        </div>
+                                                        <div class="media-body">
+                                                            <h6 class="mt-0 mb-0">The corps   <span class="float-right text-success"> 2,926 </span>  </h6>
+                                                            <p> Multi-Purpose WordPress Theme </p>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-xl-4 mt-4 mt-xl-0">
+                                            <div class="claerfix">
+                                                <h5 class="card-title">Revenue sources</h5>
+                                            </div>
+                                            <div class="row">
+                                                <div class="col-lg-7">
+                                                    <div id="morris-donut" style="height: 300px;"></div>
+                                                </div>
+                                                <div class="col-lg-5">
+                                                    <h3>$50,500 </h3>
+                                                    <div class="row no-gutters">
+                                                        <div class="col-12 col-sm-4 col-md-4 col-lg-12 mt-30">
+                                                            <b>Member Commission </b>
+                                                            <p class="text-success">$4,564</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-4 col-md-4 col-lg-12 mt-30">
+                                                            <b>Product sales</b>
+                                                            <p class="text-info">$1,616</p>
+                                                        </div>
+                                                        <div class="col-12 col-sm-4 col-md-4 col-lg-12 mt-30">
+                                                            <b>Consulting</b>
+                                                            <p class="text-danger">$6,546</p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row mb-30">
+                        <div class="col-12">
+                            <div class="card card-statistics h-100">
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col-xl-7">
+                                            <div id="world-map-markers" class="map-height"></div>
+                                        </div>
+                                        <div class="col-xl-5">
+                                            <div class="active-user">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                        <h5>Right now </h5>
+                                                        <span class="text-danger">9</span>
+                                                    </div>
+                                                    <div class="col-md-8">
+                                                        <h5>Active users on site</h5>
+                                                        <div class="clearfix">
+                                                            <p class="mb-10 float-left">Desktop </p>
+                                                            <p class="mb-10 float-right">Mobile</p>
+                                                        </div>
+                                                        <div class="progress progress-small">
+                                                            <div class="skill2-bar bg-warning" role="progressbar" style="width: 60%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"></div>
+                                                            <div class="skill2-bar bg-success" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="table-responsive mb-10">
+                                                <table class="table center-aligned-table">
+                                                    <thead>
+                                                        <tr class="text-dark">
+                                                            <th>No </th>
+                                                            <th>Contrary </th>
+                                                            <th>2016</th>
+                                                            <th>2017</th>
+                                                            <th>Change</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <tr>
+                                                            <td><i class="fa fa-circle text-success"></i></td>
+                                                            <td>USA</td>
+                                                            <td>2,009 </td>
+                                                            <td>5,230</td>
+                                                            <td>8.01% <i class="fa fa-level-up text-success"></i></td>
+                                                        </tr>
+                                                        <tr>
+                                                            <td><i class="fa fa-circle text-info"></i></td>
+                                                            <td>India</td>
+                                                            <td>2,609</td>
+                                                            <td>2,430</td>
+                                                            <td>7.01% <i class="fa fa-level-down text-warning"></i></td>
+                                                        </tr>
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                            <div id="sparkline2" class="scrollbar-x text-center"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 mb-30">
+                            <div class="card h-100">
+                                <div class="btn-group info-drop">
+                                    <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#"><i class="text-primary ti-reload"></i>Refresh</a>
+                                        <a class="dropdown-item" href="#"><i class="text-secondary ti-eye"></i>View all</a>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="card-title">Site Visits Growth </h5>
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <h5 class="text-danger">Income</h5>
+                                            <p class="text-danger">+584</p>
+                                        </div>
+                                        <div class="col-6">
+                                            <h5 class="text-info">Outcome</h5>
+                                            <p class="text-info">-255</p>
+                                        </div>
+                                    </div>
+                                    <div id="morris-line" style="height: 320px;"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 mb-30">
+                            <div class="card card-statistics h-100">
+                                <div class="btn-group info-drop">
+                                    <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                                    <div class="dropdown-menu">
+                                        <a class="dropdown-item" href="#"><i class="text-primary ti-reload"></i>Refresh</a>
+                                        <a class="dropdown-item" href="#"><i class="text-secondary ti-eye"></i>View all</a>
+                                    </div>
+                                </div>
+                                <div class="card-body pb-150">
+                                    <h5 class="card-title">Customer Feedback</h5>
+                                    <div class="row mt-20">
+                                        <div class="col-md-6">
+                                            <div class="clearfix">
+                                                <p class="mb-10 float-left">Positive</p>
+                                                <i class="mb-10 text-success float-right fa fa-arrow-up"> </i>
+                                            </div>
+                                            <div class="progress progress-small">
+                                                <div class="skill2-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h2 class="mt-10 text-success">8501</h2>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <div class="clearfix">
+                                                <p class="mb-10 float-left">Negative</p>
+                                                <i class="mb-10 text-danger float-right fa fa-arrow-down"> </i>
+                                            </div>
+                                            <div class="progress progress-small">
+                                                <div class="skill2-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                                            </div>
+                                            <h2 class="mt-10 text-danger">3251</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div id="sparkline1" class="text-center w-100"></div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 mb-30">
+                            <div class="card card-statistics h-100">
+                                <div class="p-4 text-center bg-danger text-white">
+                                    <h5 class="mb-30 text-white">Sarah Lisbon</h5>
+                                    <!-- action group -->
+                                    <div class="btn-group info-drop">
+                                        <button type="button" class="dropdown-toggle-split text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                                        <div class="dropdown-menu">
+                                            <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> Add task</a>
+                                            <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i> Edit Profile</a>
+                                            <a class="dropdown-item" href="#"><i class="text-success ti-user"></i> View Profile</a>
+                                            <a class="dropdown-item" href="#"><i class="text-secondary ti-info"></i> Contact Info</a>
+                                        </div>
+                                    </div>
+                                    <img class="img-fluid w-25 rounded-circle " src="images/team/11.jpg" alt="">
+                                    <p class="mt-30 text-white">Carol J. Stephens 1635 Franklin Street Montgomery, AL 36104</p>
+                                    <div class="social-icons color-hover clearfix mt-20">
+                                        <ul>
+                                            <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                                            <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li class="social-github"><a href="#"><i class="fa fa-github"></i></a></li>
+                                            <li class="social-youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                                            <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="card-body text-center">
+                                    <div class="row">
+                                        <div class="col-6 col-sm-4 xs-mb-10 md-mt-0 mt-20">
+                                            <b>Following</b>
+                                            <h4 class="mt-10">2,655 </h4>
+                                        </div>
+                                        <div class="col-6 col-sm-4 xs-mb-10 md-mt-0 mt-20">
+                                            <b>Followers </b>
+                                            <h4 class="mt-10">54k</h4>
+                                        </div>
+                                        <div class="col-12 col-sm-4 md-mt-0 mt-20">
+                                            <b>Post</b>
+                                            <h4 class="mt-10">602</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 mb-30">
+                            <div class="card h-100">
+                                <div class="card card-statistics h-100">
+                                    <div class="card-body">
+                                        <div class="row">
+                                            <div class="col-6 col-sm-4 xs-mb-20">
+                                                <h6>Total usage </h6>
+                                                <b class="text-info">21.05 GB</b>
+                                            </div>
+                                            <div class="col-6 col-sm-4 xs-mb-20">
+                                                <h6>Currently </h6>
+                                                <b class="text-danger">227.34 KB </b>
+                                            </div>
+                                            <div class="col-12 col-sm-4 xs-mb-20">
+                                                <h6>Average</h6>
+                                                <b class="text-warning">117.65 MB </b>
+                                            </div>
+                                        </div>
+                                        <div class="table-responsive">
+                                            <table class="table mt-30">
+                                                <tbody>
+                                                    <tr>
+                                                        <td>Iphine 7</td>
+                                                        <td>192.168.0.5</td>
+                                                        <td>227.34KB </td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Windows</td>
+                                                        <td>192.168.0.4</td>
+                                                        <td>128.62KB </td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                    <div id="sparkline5" class="scrollbar-x text-center"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-8 mb-30">
+                            <div class="card card-statistics weather-box h-100">
+                                <div class="bg-dark p-20">
+                                    <div class="row">
+                                        <div class="col-md-7">
+                                            <h3 class="text-white">New york USA</h3>
+                                            <h5 class="text-white d-block mt-10"><i class="ti-cloud mr-10"></i>  Sunny</h5>
+                                            <ul class="list-unstyled mt-10">
+                                                <li class="text-white list-inline-item pr-3 mt-10"> Wind: <span> 50 km/hr </span></li>
+                                                <li class="text-white list-inline-item pr-3 mt-10"> humidity : <span> 25% </span></li>
+                                                <li class="text-white list-inline-item mt-10"> Feels like: <span> 34° </span></li>
+                                            </ul>
+                                        </div>
+                                        <div class="col-md-5 text-left text-md-right sm-mt-20">
+                                            <h4 class="text-white">Currently</h4>
+                                            <h2 class="text-white mt-10 weather-degree"> <i class="fa fa-cloud text-info"></i> 24°</h2>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row pt-4 pb-4">
+                                        <div class="col-xl-2 col-md-4 col-6 text-center">
+                                            <h6 class="mb-15">Mon </h6>
+                                            <div class="weather-icon py-3 text-warning"> <i class="wi wi-day-cloudy-high"></i> </div>
+                                            <h4 class="mt-15">30°</h4>
+                                        </div>
+                                        <div class="col-xl-2 col-md-4 col-6 text-center">
+                                            <h6 class="mb-15">Tue </h6>
+                                            <div class="weather-icon py-3 text-danger"> <i class="wi wi-day-light-wind"></i> </div>
+                                            <h4 class="mt-15">31°</h4>
+                                        </div>
+                                        <div class="col-xl-2 col-md-4 col-6 text-center">
+                                            <h6 class="mb-15">Wed </h6>
+                                            <div class="weather-icon py-3 text-info"> <i class="wi wi-day-haze"></i> </div>
+                                            <h4 class="mt-15">29°</h4>
+                                        </div>
+                                        <div class="col-xl-2 col-md-4 col-6 text-center">
+                                            <h6 class="mb-15">Thu </h6>
+                                            <div class="weather-icon py-3 text-success"> <i class="wi wi-day-sleet"></i> </div>
+                                            <h4 class="mt-15">30°</h4>
+                                        </div>
+                                        <div class="col-xl-2 col-md-4 col-6 text-center">
+                                            <h6 class="mb-15">Sat </h6>
+                                            <div class="weather-icon py-3 text-dark"> <i class="wi wi-sleet"></i> </div>
+                                            <h4 class="mt-15">32°</h4>
+                                        </div>
+                                        <div class="col-xl-2 col-md-4 col-6 text-center">
+                                            <h6 class="mb-15">Sun </h6>
+                                            <div class="weather-icon py-3 text-secondary"> <i class="wi wi-sunset"></i> </div>
+                                            <h4 class="mt-15">34°</h4>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-4 mb-30">
+                            <div class="card card-statistics fb-bg h-100">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <div class="float-left icon-box-fixed">
+                                            <span class="text-white">
+                                              <i class="fa fa-facebook highlight-icon" aria-hidden="true"></i>
+                                            </span>
+                                        </div>
+                                        <div class="float-right">
+                                            <h4 class="text-white">11,543</h4>
+                                            <p class="card-text text-white">Likes </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 mb-30">
+                            <div class="card card-statistics youtube-bg h-100">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <div class="float-left icon-box-fixed">
+                                            <span class="text-white">
+                    <i class="fa fa-youtube highlight-icon" aria-hidden="true"></i>
+                  </span>
+                                        </div>
+                                        <div class="float-right">
+                                            <h4 class="text-white">1,20,543</h4>
+                                            <p class="card-text text-white">Subscribers </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-4 mb-30">
+                            <div class="card card-statistics twitter-bg h-100">
+                                <div class="card-body">
+                                    <div class="clearfix">
+                                        <div class="float-left icon-box-fixed">
+                                            <span class="text-white">
+                    <i class="fa fa-twitter highlight-icon" aria-hidden="true"></i>
+                  </span>
+                                        </div>
+                                        <div class="float-right">
+                                            <h4 class="text-white">41,652</h4>
+                                            <p class="card-text text-white">Followers </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--=================================
+ wrapper -->
+                    <!--=================================
+ footer -->
+                    <footer class="bg-white p-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="text-center text-md-left">
+                                    <p class="mb-0"> &copy; Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>. <a href="#"> Webmin </a> All Rights Reserved. </p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <ul class="text-center text-md-right">
+                                    <li class="list-inline-item"><a href="#">Terms & Conditions </a> </li>
+                                    <li class="list-inline-item"><a href="#">API Use Policy </a> </li>
+                                    <li class="list-inline-item"><a href="#">Privacy Policy </a> </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </footer>
+                </div>
+                <!-- main content wrapper end-->
+            </div>
+        </div>
+    </div>
+    <!--=================================
+ footer -->
+    
+    <!--=================================
+ jquery -->
+    <!-- jquery -->
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- plugins-jquery -->
+    <script src="js/plugins-jquery.js"></script>
+    <!-- plugin_path -->
+    <script>
+    var plugin_path = 'js/';
+    </script>
+    <!-- jvectormap -->
+    <script src="js/jvectormap/jquery-jvectormap-2.0.3.min.js"></script>
+    <script src="js/jvectormap/jquery-jvectormap-world-mill-en.js"></script>
+    <script src="js/jvectormap/jquery-jvectormap-init.js"></script>
+    <!-- chart -->
+    <script src="js/chart-init.js"></script>
+    <!-- calendar -->
+    <script src="js/calendar.init.js"></script>
+    <!-- charts sparkline -->
+    <script src="js/sparkline.init.js"></script>
+    <!-- charts morris -->
+    <script src="js/morris.init.js"></script>
+    <!-- datepicker -->
+    <script src="js/datepicker.js"></script>
+    <!-- sweetalert2 -->
+    <script src="js/sweetalert2.js"></script>
+    <!-- toastr -->
+    <script src="js/toastr.js"></script>
+    <!-- validation -->
+    <script src="js/validation.js"></script>
+    <!-- lobilist -->
+    <script src="js/lobilist.js"></script>
+    <!-- custom -->
+    <script src="js/custom.js"></script>
+</body>
+
+</html>

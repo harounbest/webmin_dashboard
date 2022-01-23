@@ -1,0 +1,7 @@
+.documentor-wrap .doc-search,
+.documentor-wrap .documentor-topicons,
+.documentor-wrap .documentor-social,
+.documentor-wrap .doc-postedit-link,
+.documentor-wrap .documentor-help {
+	display: none !important;
+}

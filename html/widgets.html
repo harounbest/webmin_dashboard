@@ -1,0 +1,2903 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="keywords" content="HTML5 Template" />
+<meta name="description" content="Webmin - Bootstrap 4 & Angular 5 Admin Dashboard Template" />
+<meta name="author" content="potenzaglobalsolutions.com" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+<title>Webmin - Bootstrap 4 & Angular 5 Admin Dashboard Template</title>
+
+<!-- Favicon -->
+<link rel="shortcut icon" href="images/favicon.ico" />
+
+<!-- Font -->
+<link  rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins:200,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900">
+
+<!-- css -->
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+ 
+</head>
+
+<body>
+
+<div class="wrapper">
+
+<!--=================================
+ preloader -->
+ 
+<div id="pre-loader">
+    <img src="images/pre-loader/loader-01.svg" alt="">
+</div>
+
+<!--=================================
+ preloader -->
+
+<!--=================================
+ header start-->
+ 
+<nav class="admin-header navbar navbar-default col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
+  <!-- logo -->
+  <div class="text-left navbar-brand-wrapper">
+    <a class="navbar-brand brand-logo" href="index.html"><img src="images/logo-dark.png" alt="" ></a>
+    <a class="navbar-brand brand-logo-mini" href="index.html"><img src="images/logo-icon-dark.png" alt=""></a>
+  </div>
+  <!-- Top bar left -->
+  <ul class="nav navbar-nav mr-auto">
+    <li class="nav-item">
+      <a id="button-toggle" class="button-toggle-nav inline-block ml-20 pull-left" href="javascript:void(0);"><i class="zmdi zmdi-menu ti-align-right"></i></a>
+    </li>
+    <li class="nav-item">
+      <div class="search">
+        <a class="search-btn not_click" href="javascript:void(0);"></a>
+        <div class="search-box not-click">
+          <input type="text" class="not-click form-control" placeholder="Search" value="" name="search">
+          <button class="search-button" type="submit"> <i class="fa fa-search not-click"></i></button>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <!-- top bar right -->
+  <ul class="nav navbar-nav ml-auto">
+    <li class="nav-item fullscreen">
+      <a id="btnFullscreen" href="#" class="nav-link" ><i class="ti-fullscreen"></i></a>
+    </li>
+    <li class="nav-item dropdown ">
+      <a class="nav-link top-nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <i class="ti-bell"></i>
+        <span class="badge badge-danger notification-status"> </span>
+      </a>
+      <div class="dropdown-menu dropdown-menu-right dropdown-big dropdown-notifications">
+        <div class="dropdown-header notifications">
+          <strong>Notifications</strong>
+          <span class="badge badge-pill badge-warning">05</span>
+        </div>
+        <div class="dropdown-divider"></div>
+        <a href="#" class="dropdown-item">New registered user <small class="float-right text-muted time">Just now</small> </a>
+        <a href="#" class="dropdown-item">New invoice received <small class="float-right text-muted time">22 mins</small> </a>
+        <a href="#" class="dropdown-item">Server error report<small class="float-right text-muted time">7 hrs</small> </a>
+        <a href="#" class="dropdown-item">Database report<small class="float-right text-muted time">1 days</small> </a>
+        <a href="#" class="dropdown-item">Order confirmation<small class="float-right text-muted time">2 days</small> </a>
+      </div>
+    </li>
+    <li class="nav-item dropdown ">
+      <a class="nav-link top-nav" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="true"> <i class=" ti-view-grid"></i> </a>
+      <div class="dropdown-menu dropdown-menu-right dropdown-big">
+        <div class="dropdown-header">
+          <strong>Quick Links</strong>
+        </div>
+        <div class="dropdown-divider"></div> 
+        <div class="nav-grid">
+          <a href="#" class="nav-grid-item"><i class="ti-files text-primary"></i><h5>New Task</h5></a>
+          <a href="#" class="nav-grid-item"><i class="ti-check-box text-success"></i><h5>Assign Task</h5></a>
+        </div>
+        <div class="nav-grid">
+          <a href="#" class="nav-grid-item"><i class="ti-pencil-alt text-warning"></i><h5>Add Orders</h5></a>
+          <a href="#" class="nav-grid-item"><i class="ti-truck text-danger "></i><h5>New Orders</h5></a>
+        </div>
+      </div>
+    </li>
+    <li class="nav-item dropdown mr-30">
+      <a class="nav-link nav-pill user-avatar" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+        <img src="images/profile-avatar.jpg" alt="avatar">
+      </a>
+      <div class="dropdown-menu dropdown-menu-right">
+        <div class="dropdown-header">
+          <div class="media">
+            <div class="media-body">
+              <h5 class="mt-0 mb-0">Michael Bean</h5>
+              <span>michael-bean@mail.com</span>
+            </div>
+          </div>
+        </div>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i class="text-secondary ti-reload"></i>Activity</a>
+        <a class="dropdown-item" href="#"><i class="text-success ti-email"></i>Messages</a>
+        <a class="dropdown-item" href="#"><i class="text-warning ti-user"></i>Profile</a>
+        <a class="dropdown-item" href="#"><i class="text-dark ti-layers-alt"></i>Projects <span class="badge badge-info">6</span> </a>
+        <div class="dropdown-divider"></div>
+        <a class="dropdown-item" href="#"><i class="text-info ti-settings"></i>Settings</a>
+        <a class="dropdown-item" href="#"><i class="text-danger ti-unlock"></i>Logout</a>
+      </div>
+    </li>
+  </ul>
+</nav>
+
+<!--=================================
+ header End-->
+
+<!--=================================
+ Main content -->
+
+<div class="container-fluid">
+  <div class="row">
+    <!-- Left Sidebar -->
+    <div class="side-menu-fixed">
+     <div class="scrollbar side-menu-bg">
+      <ul class="nav navbar-nav side-menu" id="sidebarnav">
+        <!-- menu item Dashboard-->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#dashboard">
+            <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">Dashboard</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="dashboard" class="collapse" data-parent="#sidebarnav">
+            <li> <a href="index.html">Dashboard 01</a> </li>
+            <li> <a href="index-02.html">Dashboard 02</a> </li>
+            <li> <a href="index-03.html">Dashboard 03</a> </li>
+            <li> <a href="index-04.html">Dashboard 04</a> </li>
+            <li> <a href="index-05.html">Dashboard 05</a> </li>
+          </ul>
+        </li>
+        <!-- menu title -->
+         <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Components </li>
+        <!-- menu item Elements-->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#elements">
+            <div class="pull-left"><i class="ti-palette"></i><span class="right-nav-text">Elements</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="elements" class="collapse" data-parent="#sidebarnav">
+            <li><a href="accordions.html">Accordions</a></li>
+            <li><a href="alerts.html">Alerts</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="colorpicker.html">Colorpicker</a></li>
+            <li><a href="dropdown.html">Dropdown</a></li>
+            <li><a href="lists.html">lists</a></li>
+            <li><a href="modal.html">modal</a></li>
+            <li><a href="nav.html">nav</a></li>
+            <li><a href="nicescroll.html">nicescroll</a></li>
+            <li><a href="pricing-table.html">pricing table</a></li>
+            <li><a href="ratings.html">ratings</a></li>
+            <li><a href="date-picker.html">date picker</a></li>
+            <li><a href="tabs.html">tabs</a></li>
+            <li><a href="typography.html">typography</a></li>
+            <li><a href="popover-tooltips.html">Popover tooltips</a></li>
+            <li><a href="progress.html">progress</a></li>
+            <li><a href="switch.html">switch</a></li>
+            <li><a href="sweetalert2.html">sweetalert2</a></li>
+            <li><a href="touchspin.html">touchspin</a></li>
+          </ul>
+        </li>
+        <!-- menu item calendar-->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#calendar-menu">
+            <div class="pull-left"><i class="ti-calendar"></i><span class="right-nav-text">calendar</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="calendar-menu" class="collapse" data-parent="#sidebarnav">
+            <li> <a href="calendar.html">Events Calendar </a> </li>
+            <li> <a href="calendar-list.html">List Calendar</a> </li>
+          </ul>
+        </li>
+        <!-- menu item todo-->
+        <li>
+          <a href="todo-list.html"><i class="ti-menu-alt"></i><span class="right-nav-text">Todo list</span> </a>
+        </li>
+         <!-- menu item chat-->
+         <li> 
+           <a href="chat-page.html"><i class="ti-comments"></i><span class="right-nav-text">Chat </span></a>  
+         </li>
+         <!-- menu item mailbox-->
+        <li>
+          <a href="mail-box.html"><i class="ti-email"></i><span class="right-nav-text">Mail box</span> <span class="badge badge-pill badge-warning float-right mt-1">HOT</span> </a>
+        </li>
+        <!-- menu item Charts-->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#chart">
+            <div class="pull-left"><i class="ti-pie-chart"></i><span class="right-nav-text">Charts</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="chart" class="collapse" data-parent="#sidebarnav">
+            <li> <a href="chart-js.html">Chart.js</a> </li>
+            <li> <a href="chart-morris.html">Chart morris </a> </li>
+            <li> <a href="chart-sparkline.html">Chart Sparkline</a> </li>
+          </ul>
+        </li>
+        
+        <!-- menu font icon-->
+         <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#font-icon">
+            <div class="pull-left"><i class="ti-home"></i><span class="right-nav-text">font icon</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="font-icon" class="collapse" data-parent="#sidebarnav">
+            <li> <a href="fontawesome-icon.html">font Awesome</a> </li>
+            <li> <a href="themify-icons.html">Themify icons</a> </li>
+            <li> <a href="weather-icon.html">Weather icons</a> </li>
+          </ul>
+        </li>
+        <!-- menu title -->
+        <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Widgets, Forms & Tables </li>
+        <!-- menu item Widgets-->
+        <li>
+          <a href="widgets.html"><i class="ti-blackboard"></i><span class="right-nav-text">Widgets</span> <span class="badge badge-pill badge-danger float-right mt-1">59</span> </a>
+        </li>
+        <!-- menu item Form-->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#Form">
+            <div class="pull-left"><i class="ti-files"></i><span class="right-nav-text">Form & Editor</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="Form" class="collapse" data-parent="#sidebarnav">
+            <li> <a href="editor.html">Editor</a> </li>
+            <li> <a href="editor-markdown.html">Editor Markdown</a> </li>
+            <li> <a href="form-input.html">Form input</a> </li>
+            <li> <a href="form-validation-jquery.html">form validation jquery</a> </li>
+            <li> <a href="form-wizard.html">form wizard</a> </li>
+            <li> <a href="form-repeater.html">form repeater</a> </li>
+            <li> <a href="input-group.html">input group</a> </li>
+            <li> <a href="toastr.html">toastr</a> </li>
+          </ul>
+        </li>
+        <!-- menu item table -->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#table">
+            <div class="pull-left"><i class="ti-layout-tab-window"></i><span class="right-nav-text">data table</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="table" class="collapse" data-parent="#sidebarnav">
+            <li> <a href="data-html-table.html">Data html table</a> </li>
+            <li> <a href="data-local.html">Data local</a> </li>
+            <li> <a href="data-table.html">Data table</a> </li>
+          </ul>
+        </li>
+        <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">More Pages</li>
+        <!-- menu item Custom pages-->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#custom-page">
+            <div class="pull-left"><i class="ti-file"></i><span class="right-nav-text">Custom pages</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="custom-page" class="collapse" data-parent="#sidebarnav">
+            <li> <a href="projects.html">projects</a> </li>
+            <li> <a href="project-summary.html">Projects summary</a> </li>
+            <li> <a href="profile.html">profile</a> </li>
+            <li> <a href="app-contacts.html">App contacts</a> </li>
+            <li> <a href="contacts.html">Contacts</a> </li>
+            <li> <a href="file-manager.html">file manager</a> </li>
+            <li> <a href="invoice.html">Invoice</a> </li>
+            <li> <a href="blank.html">Blank page</a> </li>
+            <li> <a href="layout-container.html">layout container</a> </li>
+            <li> <a href="error.html">Error</a> </li>
+            <li> <a href="faqs.html">faqs</a> </li>
+          </ul>
+        </li>
+        <!-- menu item Authentication-->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#authentication">
+            <div class="pull-left"><i class="ti-id-badge"></i><span class="right-nav-text">Authentication</span></div>
+            <div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div>
+          </a>
+          <ul id="authentication" class="collapse" data-parent="#sidebarnav">
+            <li> <a href="login.html">login</a> </li>
+            <li> <a href="register.html">register</a> </li>
+            <li> <a href="lockscreen.html">Lock screen</a> </li>
+          </ul>
+        </li>
+        <!-- menu item maps-->
+        <li>
+          <a href="maps.html"><i class="ti-location-pin"></i><span class="right-nav-text">maps</span> <span class="badge badge-pill badge-success float-right mt-1">06</span></a>
+        </li>
+        <!-- menu item timeline-->
+        <li>
+          <a href="timeline.html"><i class="ti-panel"></i><span class="right-nav-text">timeline</span> </a>
+        </li>
+        <!-- menu item Multi level-->
+        <li>
+          <a href="javascript:void(0);" data-toggle="collapse" data-target="#multi-level"><div class="pull-left"><i class="ti-layers"></i><span class="right-nav-text">Multi level Menu</span></div><div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+          <ul id="multi-level" class="collapse" data-parent="#sidebarnav">
+          <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#auth">Level item 1<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+            <ul id="auth" class="collapse">
+              <li>
+                <a href="javascript:void(0);" data-toggle="collapse" data-target="#login">Level item 1.1<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                  <ul id="login" class="collapse">
+                    <li>
+                    <a href="javascript:void(0);" data-toggle="collapse" data-target="#invoice">level item 1.1.1<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+                    <ul id="invoice" class="collapse">
+                      <li> <a href="#">level item 1.1.1.1</a> </li>
+                      <li> <a href="#">level item 1.1.1.2</a> </li>
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+              <li> <a href="#">level item 1.2</a> </li>
+            </ul>
+          </li>
+          <li>
+            <a href="javascript:void(0);" data-toggle="collapse" data-target="#error">level item 2<div class="pull-right"><i class="ti-plus"></i></div><div class="clearfix"></div></a>
+            <ul id="error" class="collapse" >
+              <li> <a href="#">level item 2.1</a> </li>
+              <li> <a href="#">level item 2.2</a> </li>
+            </ul>
+          </li>
+        </ul>
+      </li>
+      
+    </ul>
+  </div> 
+</div> 
+<!-- Left Sidebar End--> 
+
+<!--=================================
+ Main content -->
+
+ <!--=================================
+wrapper -->
+
+    <div class="content-wrapper">
+      <div class="page-title">
+      <div class="row">
+          <div class="col-sm-6">
+              <h4 class="mb-0"> Widgets</h4>
+          </div>
+          <div class="col-sm-6">
+            <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right ">
+              <li class="breadcrumb-item"><a href="#" class="default-color">Home</a></li>
+              <li class="breadcrumb-item active">Dashboard</li>
+            </ol>
+          </div>
+        </div>
+      </div>
+      <!-- widgets -->
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="text-danger">
+                    <i class="fa fa-bar-chart-o highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Visitors</p>
+                  <h4>65,650</h4>
+                </div>
+              </div>
+              <p class="text-muted mt-3 pt-3 border-top">
+                <i class="fa fa-exclamation-circle mr-1" aria-hidden="true"></i> 81% lower growth
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="text-warning">
+                    <i class="fa fa-shopping-cart highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Orders</p>
+                  <h4>656</h4>
+                </div>
+              </div>
+              <p class="text-muted mt-3 pt-3 border-top">
+                <i class="fa fa-bookmark-o mr-1" aria-hidden="true"></i> Total sales
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="text-success">
+                    <i class="fa fa-dollar highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Revenue</p>
+                  <h4>$65656</h4>
+                </div>
+              </div>
+              <p class="text-muted mt-3 pt-3 border-top">
+                <i class="fa fa-calendar mr-1" aria-hidden="true"></i> Sales Per Week 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100 admin-followers">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="text-primary">
+                    <i class="fa fa-twitter highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Followers</p>
+                  <h4>62,500+</h4>
+                </div>
+              </div>
+              <p class="text-muted mt-3 pt-3 border-top">
+                <i class="fa fa-repeat mr-1" aria-hidden="true"></i> Just Updated
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100 bg-danger">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="text-white">
+                    <i class="fa fa-bar-chart-o highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-white">Visitors</p>
+                  <h4 class="text-white">65,650</h4>
+                </div>
+              </div>
+              <p class="mt-3 text-white pt-3 border-top border-white">
+                <i class="fa fa-exclamation-circle mr-1" aria-hidden="true"></i> 81% lower growth
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100 bg-primary">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="text-white">
+                    <i class="fa fa-shopping-cart highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-white">Orders</p>
+                  <h4 class="text-white">656</h4>
+                </div>
+              </div>
+              <p class="text-white mt-3 pt-3 border-top border-white">
+                <i class="fa fa-bookmark-o mr-1" aria-hidden="true"></i> Total sales
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100 bg-warning">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="text-white">
+                    <i class="fa fa-dollar highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-white">Revenue</p>
+                  <h4 class="text-white">$65656</h4>
+                </div>
+              </div>
+              <p class="text-white mt-3 pt-3 border-top border-white">
+                <i class="fa fa-calendar mr-1" aria-hidden="true"></i> Sales Per Week 
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100 bg-dark">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left">
+                  <span class="text-white">
+                    <i class="fa fa-twitter highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-white">Followers</p>
+                  <h4 class="text-white">62,500+</h4>
+                </div>
+              </div>
+              <p class="text-white mt-3 pt-3 border-top border-white">
+                <i class="fa fa-repeat mr-1" aria-hidden="true"></i> Just Updated
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box bg-danger">
+                  <span class="text-white">
+                    <i class="fa fa-bar-chart-o highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Visitors</p>
+                  <h4>65,650</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box bg-primary">
+                  <span class="text-white">
+                    <i class="fa fa-shopping-cart highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Orders</p>
+                  <h4>656</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box bg-warning">
+                  <span class="text-white">
+                    <i class="fa fa-dollar highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Revenue</p>
+                  <h4>$65656</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box bg-dark">
+                  <span class="text-white">
+                    <i class="fa fa-twitter highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Followers</p>
+                  <h4>62,500+</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box bg-danger rounded-circle">
+                  <span class="text-white">
+                    <i class="fa fa-bar-chart-o highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Visitors</p>
+                  <h4>65,650</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box bg-primary rounded-circle">
+                  <span class="text-white">
+                    <i class="fa fa-shopping-cart highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Orders</p>
+                  <h4>656</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box bg-warning rounded-circle">
+                  <span class="text-white">
+                    <i class="fa fa-dollar highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Revenue</p>
+                  <h4>$65656</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-lg-6 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box bg-dark rounded-circle">
+                  <span class="text-white">
+                    <i class="fa fa-twitter highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <p class="card-text text-dark">Followers</p>
+                  <h4>62,500+</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics fb-bg h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box-fixed">
+                  <span class="text-white">
+                    <i class="fa fa-facebook highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <h4 class="text-white">11,543</h4>
+                  <p class="card-text text-white">Likes </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics youtube-bg h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box-fixed">
+                  <span class="text-white">
+                    <i class="fa fa-youtube highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <h4 class="text-white">1,20,543</h4>
+                  <p class="card-text text-white">Subscribers  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics twitter-bg h-100">
+            <div class="card-body">
+              <div class="clearfix">
+                <div class="float-left icon-box-fixed">
+                  <span class="text-white">
+                    <i class="fa fa-twitter highlight-icon" aria-hidden="true"></i>
+                  </span>
+                </div>
+                <div class="float-right text-right">
+                  <h4 class="text-white">41,652</h4>
+                  <p class="card-text text-white">Followers </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+               <h5 class="card-title">Total Sales</h5>
+               <h4>$15,502 </h4>
+               <p>3rd Quarter</p>
+               <div class="row mt-20">
+                  <div class="col-md-6 mb-20">
+                     <p class="mb-10">Member Commission</p>
+                    <div class="progress progress-small">
+                      <div class="skill2-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-10 text-info">5887</p>
+                  </div>
+                  <div class="col-md-6">
+                     <p class="mb-10">Product sales</p>
+                    <div class="progress progress-small">
+                      <div class="skill2-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-10 text-danger">9656</p>
+                  </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body text-center">
+               <h5 class="card-title">Goal Progress</h5>
+               <h4>$50,500 </h4>
+                <div class="mt-15 clearfix">
+                   <p class="mb-10">258 Countries, 4835 Citie</p>
+                  <div class="progress progress-small">
+                    <div class="skill2-bar bg-warning" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col-6 col-sm-4 mt-20">
+                     <b>Consulting</b>
+                     <p class="text-success">4656</p>
+                  </div>
+                  <div class="col-6 col-sm-4 mt-20">
+                    <b>EDU management</b>
+                     <p class="text-info">4656</p>
+                  </div>
+                  <div class="col-12 col-sm-4 mt-20">
+                    <b>Online tutorials</b>
+                     <p class="text-danger">4656</p>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body text-left">
+               <h5 class="card-title">Members Activity</h5>
+                <div class="row">
+                  <div class="col-6 col-sm-6 mb-15">
+                    <div class="counter counter-small">
+                      <h4 class="timer text-success" data-to="4905" data-speed="10000">4905</h4>
+                      <label class="text-capitalize mt-0">New submissions </label>
+                    </div>
+                  </div>
+                  <div class="col-6 col-sm-6 mb-15">
+                    <div class="counter counter-small">
+                      <h4 class="timer text-info" data-to="6524" data-speed="10000">6524</h4>
+                      <label class="text-capitalize mt-0">New contacts</label>
+                    </div>
+                  </div>
+                </div>
+                <div class="divider"></div>
+                <div class="row">
+                  <div class="col-6 col-sm-4 mt-15">
+                     <b>Daily visitors</b>
+                     <p>465</p>
+                  </div>
+                  <div class="col-6 col-sm-4 mt-15">
+                    <b>Active</b>
+                     <p>9524</p>
+                  </div>
+                  <div class="col-12 col-sm-4 mt-15">
+                    <b>Inactive</b>
+                     <p>1283</p>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+         <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="p-4 text-center bg" style="background: url(images/bg/01.jpg);">
+               <h5 class="mb-70 text-white position-relative">Michael Bean </h5>
+              <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> Add task</a>
+                  <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i> Edit Profile</a>
+                  <a class="dropdown-item" href="#"><i class="text-success ti-user"></i> View Profile</a>
+                  <a class="dropdown-item" href="#"><i class="text-secondary ti-info"></i> Contact Info</a>
+                </div>
+              </div>
+            </div>
+            <div class="card-body text-center position-relative">
+              <div class="avatar-top">
+                <img class="img-fluid w-25 rounded-circle " src="images/team/13.jpg" alt="">
+               </div>
+               <div class="row">
+                  <div class="col-6 col-sm-4 mt-20">
+                     <b>Files Saved</b>
+                     <h4 class="text-success mt-10">1582</h4>
+                  </div>
+                  <div class="col-6 col-sm-4 mt-20">
+                    <b>Memory Used </b>
+                     <h4 class="text-danger mt-10">58GB</h4>
+                  </div>
+                  <div class="col-12 col-sm-4 mt-20">
+                    <b>Spent Money</b>
+                     <h4 class="text-warning mt-10">352,6$</h4>
+                  </div>
+                </div>
+                <div class="divider mt-20"></div>
+                 <p class="mt-20">17504 Carlton Cuevas Rd, Gulfport, MS, 39503</p>
+                 <p class="mt-10">michael@webmin.com</p>
+                <div class="social-icons color-icon mt-20">
+                  <ul>
+                    <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-github"><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li class="social-youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="p-4 text-center bg-danger text-white">
+               <h5 class="mb-20 text-white">Sarah Lisbon</h5>
+                 <!-- action group -->
+                <div class="btn-group info-drop">
+                  <button type="button" class="dropdown-toggle-split text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> Add task</a>
+                    <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i> Edit Profile</a>
+                    <a class="dropdown-item" href="#"><i class="text-success ti-user"></i> View Profile</a>
+                    <a class="dropdown-item" href="#"><i class="text-secondary ti-info"></i> Contact Info</a>
+                  </div>
+                </div>
+               <img class="img-fluid w-25 rounded-circle " src="images/team/10.jpg" alt="">
+               <p class="mt-20 text-white">Carol J. Stephens 1635 Franklin Street Montgomery, AL 36104</p>
+                <div class="social-icons color-hover clearfix mt-20">
+                  <ul>
+                    <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-github"><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li class="social-youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="card-body text-center">
+               <div class="row">
+                  <div class="col-6 col-sm-4 xs-mb-10 md-mt-0 mt-10">
+                     <b>Following</b>
+                     <h4 class="mt-10">2,655 </h4>
+                  </div>
+                  <div class="col-6 col-sm-4 xs-mb-10 md-mt-0 mt-10">
+                    <b>Followers </b>
+                     <h4 class="mt-10">54k</h4>
+                  </div>
+                  <div class="col-12 col-sm-4 md-mt-0 mt-10">
+                    <b>Post</b>
+                     <h4 class="mt-10">602</h4>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="p-4 text-center bg-success">
+               <h5 class="mb-70 text-white">Carol Stephens </h5>
+                <div class="btn-group info-drop">
+                  <button type="button" class="dropdown-toggle-split text-white" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> Add task</a>
+                    <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i> Edit Profile</a>
+                    <a class="dropdown-item" href="#"><i class="text-success ti-user"></i> View Profile</a>
+                    <a class="dropdown-item" href="#"><i class="text-secondary ti-info"></i> Contact Info</a>
+                  </div>
+                </div>
+            </div>
+            <div class="card-body text-center">
+              <div class="avatar-top">
+                <img class="img-fluid w-25 rounded-circle " src="images/team/12.jpg" alt="">
+               </div>
+               <p class="mt-30">Fleming 196 Woodside Circle Mobile, FL 36602</p>
+                <div class="social-icons color-icon mt-20">
+                  <ul>
+                    <li class="social-rss"><a href="#"><i class="fa fa-rss"></i></a></li>
+                    <li class="social-facebook"><a href="#"><i class="fa fa-facebook"></i></a></li>
+                    <li class="social-twitter"><a href="#"><i class="fa fa-twitter"></i></a></li>
+                    <li class="social-github"><a href="#"><i class="fa fa-github"></i></a></li>
+                    <li class="social-youtube"><a href="#"><i class="fa fa-youtube"></i></a></li>
+                    <li class="social-instagram"><a href="#"><i class="fa fa-instagram"></i></a></li>
+                  </ul>
+                </div>
+               <div class="divider mt-10"></div>
+               <div class="row">
+                  <div class="col-6 col-sm-4 xs-mb-10 mt-20">
+                     <b>Project</b>
+                     <h4 class="text-success mt-10">09</h4>
+                  </div>
+                  <div class="col-6 col-sm-4 xs-mb-10 mt-20">
+                    <b>Messages </b>
+                     <h4 class="text-danger mt-10">255</h4>
+                  </div>
+                  <div class="col-12 col-sm-4 xs-mt-10 mt-20">
+                    <b>Views</b>
+                     <h4 class="text-warning mt-10">608</h4>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+    <div class="row d-flex statistics">  
+      <div class="col-xl-4 mb-30">
+        <div class="card user-activity h-100">
+          <div class="card-body">
+            <h5 class="card-title">Users Activity</h5>
+            <h2 class="text-info">210</h2>
+            <h5 class="mt-20">Social Users</h5>
+            <div class="progress progress-small">
+              <div class="skill2-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+            <div class="row mt-3">
+              <div class="col-6 mt-10">
+                <h5>Pages Visits:</h5>
+                <p class="text-danger">625 </p>
+              </div>
+              <div class="col-6 mt-10"> 
+                <h5>New User:</h5>
+                <p class="text-warning">36.2% </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 mb-30">
+        <div class="card revenue text-center h-100">
+          <div class="card-body">
+            <div class="icon text-danger"><i class="ti-bar-chart"></i></div>
+            <div class="number text-dark">28,522</div>
+            <h4 class="text-danger">Total revenue</h4>
+            <p class="mt-3"><strong>Note:</strong> We only started collecting revenue data from February 2015. Lorem ipsum is dummy content</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-4 mb-30">
+        <div class="card data-usage h-100">
+          <div class="card-body">
+            <h5 class="card-title">Monthly Usage</h5>
+            <div class="row d-flex align-items-center">
+              <div class="col-sm-4 col-lg-3 col-xl-6 xl-w-100">
+                <div> 
+                  <span class="round-chart" data-percent="77" data-width="20" data-color="#84ba3f"> 
+                    <span class="percent"></span>
+                  </span>
+                </div>
+              </div>
+              <div class="col-sm-8 col-lg-9 col-xl-6 xl-w-100">
+                <h2 class="theme-color font-weight-bold">70.45 GB</h2>
+                <small>Current Plan</small>
+                <h5 class="mt-2 text-dark">263 GB Per Month</h5></div>
+            </div>
+            <p><strong>Note:</strong> You can upgrade your existing Premium Plan to a plan with more features, or a longer subscription period.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+               <h5 class="card-title">Social Source</h5>
+               <!-- action group -->
+                <div class="btn-group info-drop">
+                  <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i>30 Days data</a>
+                    <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i>All Data</a> 
+                  </div>
+                </div>
+               <h4>$50,500 </h4>
+                <div class="mt-20">
+                   <div class="clearfix">
+                       <p class="mb-10 float-left">Facebook</p>
+                       <p class="mb-10 text-info float-right">801</p>
+                    </div>
+                  <div class="progress progress-small">
+                    <div class="skill2-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+              <div class="mt-20">
+                   <div class="clearfix">
+                       <p class="mb-10 float-left">Twitter</p>
+                       <p class="mb-10 text-success float-right">572</p>
+                    </div>
+                  <div class="progress progress-small">
+                    <div class="skill2-bar bg-success" role="progressbar" style="width: 57%" aria-valuenow="57" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="mt-20">
+                   <div class="clearfix">
+                       <p class="mb-10 float-left">Google+</p>
+                       <p class="mb-10 text-danger float-right">288</p>
+                    </div>
+                  <div class="progress progress-small">
+                    <div class="skill2-bar bg-danger" role="progressbar" style="width: 28%" aria-valuenow="28" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+                <div class="mt-20 mb-20">
+                   <div class="clearfix">
+                       <p class="mb-10 float-left">LinkedIn</p>
+                       <p class="mb-10 text-warning float-right">766</p>
+                    </div>
+                  <div class="progress progress-small">
+                    <div class="skill2-bar bg-warning" role="progressbar" style="width: 76%" aria-valuenow="76" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+         <div class="card card-statistics h-100">
+           <div class="card-body position-relative o-hidden">
+             <h5 class="card-title">Subscribe </h5>
+               <p class="mb-30">Sign up to the newsletter and never miss out on the latest news, PIN promotions, competitions, and special offers.</p>
+                <input class="form-control" type="text" placeholder="Enter your email" value="">
+                <div class="clear">
+                  <button class="button button-border mt-20 form-button">Get notified </button>
+                </div>
+              <div class="newsletter-icon">
+               <i class="fa fa-envelope-o"></i>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body pb-150">
+               <h5 class="card-title">Customer Feedback</h5>
+                <div class="row">
+                  <div class="col-md-6">
+                      <div class="clearfix">
+                       <p class="mb-10 float-left">Positive</p>
+                       <i class="mb-10 text-success float-right fa fa-arrow-up"> </i>
+                    </div>
+                    <div class="progress progress-small">
+                      <div class="skill2-bar bg-success" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h2 class="mt-10 text-success">8501</h2>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="clearfix">
+                       <p class="mb-10 float-left">Negative</p>
+                       <i class="mb-10 text-danger float-right fa fa-arrow-down"> </i>
+                    </div>
+                    <div class="progress progress-small">
+                      <div class="skill2-bar bg-danger" role="progressbar" style="width: 30%" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <h2 class="mt-10 text-danger">3251</h2>
+                  </div>
+               </div>
+             </div>
+               <div id="sparkline1" class="text-center w-100"></div>
+          </div>
+        </div>
+      </div>
+       <div class="row">
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body text-center">
+                 <div class="mb-10 mt-30">
+                   <img class="img-fluid w-25 rounded-circle" src="images/team/05.jpg" alt="">
+                   <h5 class="mt-20">Michael Bean</h5>
+                    <!-- action group -->
+                    <div class="btn-group info-drop">
+                      <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                      <div class="dropdown-menu">
+                        <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> Add task</a>
+                        <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i> Edit Profile</a>
+                        <a class="dropdown-item" href="#"><i class="text-success ti-user"></i> View Profile</a>
+                        <a class="dropdown-item" href="#"><i class="text-secondary ti-info"></i> Contact Info</a>
+                      </div>
+                    </div>
+                   <span>Developer</span>
+                   <p class="mt-10 p-3">It is truly amazing the damage that we, as parents, can inflict on our children. So why do? for future projects. </p>
+                 </div> 
+                <div class="divider"></div>
+                <div class="row">
+                  <div class="col-6 col-sm-4 mt-15">
+                     <b>Articles</b>
+                     <p class="text-success">120</p>
+                  </div>
+                  <div class="col-6 col-sm-4 mt-15">
+                    <b>Followers</b>
+                     <p class="text-danger">688</p>
+                  </div>
+                  <div class="col-12 col-sm-4 mt-15">
+                    <b>Contest won</b>
+                     <p class="text-warning">15</p>
+                  </div>
+                </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+                <h5 class="card-title">Top Locations</h5>
+                <a tabindex="0" class="info-btn text-muted" role="button" data-toggle="popover" data-trigger="focus" data-content="We are collecting Location data from February 2015"><i class="fa fa-info-circle"></i></a>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8351288872545!2d144.9556518!3d-37.8173306!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad65d4c2b349649%3A0xb6899234e561db11!2sEnvato!5e0!3m2!1sen!2sin!4v1443621171568" style="border:0; width: 100%; height: 300px;"></iframe>
+                  <div class="row">
+                    <div class="col-6 mt-20">
+                       <p class="mb-10">United states</p>
+                       <div class="progress progress-small">
+                      <div class="skill2-bar bg-info" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                    </div>
+                    <p class="mt-10 text-info">28</p>
+                  </div>
+                  <div class="col-6 mt-20">
+                     <p class="mb-10">United kingdom</p>
+                    <div class="progress progress-small">
+                      <div class="skill2-bar bg-danger" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                     </div>
+                      <p class="mt-10 text-info">35</p>
+                    </div>
+                  </div>
+             </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics text-center h-100">
+              <div class="bg-dark pb-15 pt-15">
+                 <p class="mb-10 today-date text-white"></p>
+                 <h4 class="mb-0 text-white">California, Usa</h4>
+              </div>
+             <div class="card-body">
+              <div class="weather-icon py-3 text-warning"> <i class="wi wi-sunset"></i> </div>
+              <h2 class="mt-20">26° C</h2>
+              <p class="today-day"></p>
+              <div class="divider mt-15 mb-15"></div>  
+               <div class="row no-gutters">
+                 <div class="col-6 col-md-3 col-sm-6">
+                   <div class="weather-icon mb-20 text-dark"> <i class="wi wi-night-alt-partly-cloudy"></i> </div>
+                 </div>
+                 <div class="col-6 col-md-3 col-sm-6">
+                   <div class="weather-icon mb-20 text-danger"> <i class="wi wi-thunderstorm"></i> </div>
+                 </div>
+                 <div class="col-6 col-md-3 col-sm-6">
+                    <div class="weather-icon mb-20 text-info"> <i class="wi wi-snow"></i> </div> 
+                 </div>
+                 <div class="col-6 col-md-3 col-sm-6">
+                  <div class="weather-icon mb-20 text-success"> <i class="wi wi-rain"></i> </div>
+                 </div>
+               </div>
+             </div>
+          </div>
+        </div>
+      </div>
+     <div class="row">
+        <div class="col-xl-8 mb-30">
+          <div class="card card-statistics weather-box h-100">
+            <div class="bg-dark p-20">
+              <div class="row">  
+                <div class="col-md-8">  
+                  <h3 class="text-white">New york USA</h3>
+                  <h5 class="text-white d-block mt-10"><i class="ti-cloud mr-10"></i>  Sunny</h5>
+                  <ul class="list-unstyled mt-10">
+                    <li class="text-white list-inline-item pr-3 mt-10"> Wind: <span> 50 km/hr </span></li>
+                    <li class="text-white list-inline-item pr-3 mt-10"> humidity : <span> 25% </span></li>
+                    <li class="text-white list-inline-item mt-10"> Feels like: <span> 34° </span></li>
+                  </ul>
+               </div>
+               <div class="col-md-4 text-left text-md-right sm-mt-20">  
+                  <h4 class="text-white">Currently</h4>
+                  <h2 class="text-white mt-10 weather-degree mb-0"> <i class="fa fa-cloud text-info"></i> 24°</h2>
+               </div>
+              </div>
+            </div>
+            <div class="card-body">
+               <div class="row pt-4 pb-4">
+               <div class="col-xl-2 col-md-4 col-6 text-center">
+                <h6 class="mb-15">Mon </h6> 
+                 <div class="weather-icon py-3 text-warning"> <i class="wi wi-day-cloudy-high"></i> </div>
+                <h4 class="mt-15">30°</h4>
+              </div>
+              <div class="col-xl-2 col-md-4 col-6 text-center">
+                <h6 class="mb-15">Tue </h6> 
+                <div class="weather-icon py-3 text-danger"> <i class="wi wi-day-light-wind"></i> </div>
+                <h4 class="mt-15">31°</h4>
+              </div>
+              <div class="col-xl-2 col-md-4 col-6 text-center">
+                <h6 class="mb-15">Wed </h6> 
+                <div class="weather-icon py-3 text-info"> <i class="wi wi-day-haze"></i> </div> 
+                <h4 class="mt-15">29°</h4>
+              </div>
+              <div class="col-xl-2 col-md-4 col-6 text-center">
+                <h6 class="mb-15">Thu </h6>
+                <div class="weather-icon py-3 text-success"> <i class="wi wi-day-sleet"></i> </div>
+                <h4 class="mt-15">30°</h4> 
+              </div>
+              <div class="col-xl-2 col-md-4 col-6 text-center">
+                <h6 class="mb-15">Sat </h6> 
+                <div class="weather-icon py-3 text-dark"> <i class="wi wi-sleet"></i> </div>
+                <h4 class="mt-15">32°</h4>
+              </div>
+              <div class="col-xl-2 col-md-4 col-6 text-center">
+                <h6 class="mb-15">Sun </h6> 
+                <div class="weather-icon py-3 text-secondary"> <i class="wi wi-sunset"></i> </div>
+                <h4 class="mt-15">34°</h4>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+           <div class="card card-statistics h-100 weather-box-bg bg" style="background-image: url(images/login-inner-bg.jpg);">
+            <div class="card-body position-relative pb-50">
+               <h5 class="mb-20 text-white">London, UK </h5>
+                 <h2 class="text-white mt-10 weather-degree"> <i class="fa fa-sun-o text-warning"></i> 12°/ <span>7°</span></h2>
+                 <b class="text-white mt-40 d-block today-day"></b>
+                 <p class="text-white today-date"></p>
+                 <ul class="list-unstyled mt-10 pos-bot mb-30">
+                    <li class="text-white list-inline-item pr-3 mt-10"> Wind: <span> 50 km/hr </span></li>
+                    <li class="text-white list-inline-item pr-3 mt-10"> Humidity : <span> 25% </span></li>
+                    <li class="text-white list-inline-item mt-10"> Feels like: <span> 34° </span></li>
+                  </ul>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+         <div class="card card-statistics h-100">
+          <div class="card-body">
+             <h5 class="card-title">Sales Analysis</h5>
+             <span class="badge badge-danger small badge-absolute">View</span>
+              <p class="claerfix mb-30">We only started collecting revenue data from February 2015. Lorem ipsum is dummy content</p>
+               <div class="row text-center">
+                  <div class="col-4">
+                    <h6>TOTAL</h6>
+                    <b class="text-info">56,186</b>
+                  </div>
+                  <div class="col-4">
+                    <h6>TODAY</h6>
+                    <b class="text-danger">236</b>
+                  </div>
+                  <div class="col-4">
+                    <h6>WEEK</h6>
+                    <b class="text-warning">1505</b>
+                  </div>
+               </div>
+            </div>
+            <div id="sparkline4" class="text-center"></div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+         <div class="card card-statistics h-100">
+          <!-- action group -->
+           <div class="btn-group info-drop">
+              <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="#"><i class="text-primary ti-reload"></i>Refresh</a>
+                <a class="dropdown-item" href="#"><i class="text-secondary ti-eye"></i>View all</a>
+              </div>
+            </div>
+           <div class="card-body">
+             <h5 class="card-title">Market summary</h5>
+              <h4>$50,500 </h4>
+             <div class="row mt-20">
+              <div class="col-6 col-sm-4">
+                <h6>Apple</h6>
+                <b class="text-info">+ 82.24 % </b>
+              </div>
+              <div class="col-6 col-sm-4">
+                <h6>Instagram</h6>
+                <b class="text-danger">- 12.06 % </b>
+              </div>
+              <div class="col-12 col-sm-4 xs-mt-20">
+                <h6>Google</h6>
+                <b class="text-warning">+ 24.86 % </b>
+              </div>
+            </div>
+           </div>
+          <div id="sparkline2" class="scrollbar-x text-center"></div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+         <div class="card card-statistics h-100">
+          <div class="card-body">
+        <div class="row">
+          <div class="col-6 col-sm-4">
+            <h6>Total usage </h6>
+            <b class="text-info">21.05 GB</b>
+          </div>
+          <div class="col-6 col-sm-4">
+            <h6>Currently </h6>
+            <b class="text-danger">227.34 KB </b>
+          </div>
+          <div class="col-6 col-sm-4 xs-mt-20">
+            <h6>Average</h6>
+            <b class="text-warning">117.65 MB </b>
+          </div>
+        </div>
+        <div class="table-responsive">
+          <table class="table mt-30">
+            <tbody>
+              <tr>
+                <td>Iphone 7</td>
+                <td>192.168.0.5</td>
+                <td>227.34KB </td>
+              </tr>
+              <tr>
+                <td>Windows</td>
+                <td>192.168.0.4</td>
+                <td>128.62KB </td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+          <div id="sparkline5" class="scrollbar-x text-center"></div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-3 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body p-0">
+               <div class="bg-success">
+                <div class="d-block d-md-flex justify-content-between p-3">
+                    <div class="d-block">
+                      <h5 class="text-white">Market up</h5>
+                    </div>
+                    <div class="d-block d-md-flex">
+                      <i class="mr-10 text-white fa fa-arrow-up"> </i>
+                       <h5 class="text-white"><b>463</b></h5>
+                    </div>
+                   </div>
+                  <div id="sparkline7" class="text-center"></div>
+               </div>
+               <div class="p-3 bg-white">
+                 <div class="row">
+                    <div class="col-6 col-sm-6 align-self-center">
+                      <h5>Site Visits Growth</h5>
+                      <span class="text-success">6592</span>
+                    </div>
+                    <div class="col-6 col-sm-6 align-self-center text-right">
+                     <span class="round-chart mb-0" data-percent="77" data-size="80" data-color="#28a745"> <span class="percent"></span> </span>
+                    </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>  
+        <div class="col-xl-3 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body p-0">
+               <div class="bg-danger">
+                <div class="d-block d-md-flex justify-content-between p-3">
+                    <div class="d-block">
+                      <h5 class="text-white">Market down </h5>
+                    </div>
+                    <div class="d-block d-md-flex">
+                      <i class="mr-10 text-white fa fa-arrow-down"> </i>
+                       <h5 class="text-white"><b>466</b></h5>
+                    </div>
+                   </div>
+                  <div id="sparkline8" class="text-center"></div>
+               </div>
+               <div class="p-3 bg-white">
+                 <div class="row">
+                    <div class="col-6 col-sm-6 align-self-center">
+                      <h5>Site Visits Growth</h5>
+                      <span class="text-danger">6592</span>
+                    </div>
+                    <div class="col-6 col-sm-6 align-self-center text-right">
+                     <span class="round-chart mb-0" data-percent="77" data-size="80" data-color="#dc3545"> <span class="percent"></span> </span>
+                    </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body p-0">
+               <div class="bg-warning">
+                <div class="d-block d-md-flex justify-content-between p-3">
+                    <div class="d-block">
+                      <h5 class="text-white">Total revenue</h5>
+                    </div>
+                    <div class="d-block d-md-flex">
+                       <h5 class="text-white"><b>$ 657</b></h5>
+                    </div>
+                   </div>
+                  <div id="sparkline9" class="text-center"></div>
+               </div>
+               <div class="p-3 bg-white">
+                 <div class="row">
+                    <div class="col-6 col-sm-6 align-self-center">
+                      <h5>Percentage in</h5>
+                      <span class="text-warning">6592</span>
+                    </div>
+                    <div class="col-6 col-sm-6 align-self-center text-right">
+                     <span class="round-chart mb-0" data-percent="77" data-size="80" data-color="#ffc107"> <span class="percent"></span> </span>
+                    </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-6 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body p-0">
+               <div class="bg-dark">
+                <div class="d-block d-md-flex justify-content-between p-3">
+                    <div class="d-block">
+                      <h5 class="text-white">Customer feedback</h5>
+                    </div>
+                    <div class="d-block d-md-flex">
+                       <h5 class="text-white"><b>789</b></h5>
+                    </div>
+                   </div>
+                  <div id="sparkline10" class="text-center"></div>
+               </div>
+               <div class="p-3 bg-white">
+                 <div class="row">
+                    <div class="col-6 col-sm-6 align-self-center">
+                      <h5>New user each day</h5>
+                      Monthly user: <span class="text-danger"> 6592</span>
+                    </div>
+                    <div class="col-6 col-sm-6 align-self-center text-right">
+                     <span class="round-chart mb-0" data-percent="77" data-size="80" data-color="#dc3545"> <span class="percent"></span> </span>
+                    </div>
+                 </div>
+               </div>
+            </div>
+          </div>
+        </div>
+      </div>  
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+         <div class="card card-statistics">
+           <div class="card-body ">
+             <h5 class="card-title">To Do List </h5>
+              <!-- action group -->
+              <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> Add new</a>
+                  <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i> Edit task</a>
+                  <a class="dropdown-item" href="#"><i class="text-primary ti-user"></i> Assign to other</a>
+                  <a class="dropdown-item" href="#"><i class="text-success ti-thumb-up"></i> All Done</a>
+                </div>
+              </div>
+             <div class="scrollbar  max-h-350">
+              <ul class="list-unstyled to-do">
+                <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="one" id="one">
+                      <label for="one"> Prepare Docs For today's Presentation</label>
+                    </div>
+                 </li>
+                 <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="two" id="two">
+                      <label for="two">Financial Report Discussion with team <span class="badge badge-success">Today</span>  </label>
+                    </div>
+                 </li>
+                 <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="three" id="three">
+                      <label for="three"> 5 new tickets support</label>
+                    </div>
+                 </li>
+                 <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="four" id="four">
+                      <label for="four"> Weekly project plan  <span class="badge badge-warning">Saturday</span> </label>
+                    </div>
+                 </li>
+                  <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="five" id="five">
+                      <label for="five"> Revenue generation and distribution </label>
+                    </div>
+                 </li>
+                  <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="six" id="six">
+                      <label for="six"> Create webmin's offline documentation <span class="badge badge-info">Tomorrow</span> </label>
+                    </div>
+                 </li>
+                 <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="sevan" id="sevan">
+                      <label for="sevan"> 5 new tickets support <span class="badge badge-success">Today</span>  </label>
+                    </div>
+                 </li>
+                 <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="eight" id="eight">
+                      <label for="eight"> New support forum developing</label>
+                    </div>
+                 </li>
+                 <li>
+                  <div class="remember-checkbox mb-20">
+                    <input type="checkbox" class="form-control" name="nine" id="nine">
+                      <label for="nine"> Apply leave for wedding <span class="badge badge-warning">5 week</span> </label>
+                    </div>
+                 </li>
+                  <li>
+                  <div class="remember-checkbox">
+                    <input type="checkbox" class="form-control" name="ten" id="ten">
+                      <label for="ten"> Pre-purchase FAQs content </label>
+                    </div>
+                 </li>
+              </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+           <div class="card card-statistics">
+           <div class="card-body">
+             <h5 class="card-title">Messages </h5>
+             <!-- action group -->
+             <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-success ti-thumb-up"></i> Mark As Read</a>
+                  <a class="dropdown-item" href="#"><i class="text-danger ti-trash"></i> Delete all</a>
+                </div>
+              </div>
+             <div class="scrollbar  max-h-350">
+              <ul class="list-unstyled">
+                <li class="mb-30">
+                  <div class="media">
+                   <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="images/team/01.jpg" alt="">
+                    <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">Martin smith <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-30">
+                  <div class="media">
+                    <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/02.jpg" alt="">
+                      <i class="avatar-online bg-success"></i>
+                    </div>
+                    <div class="media-body">
+                       <h6 class="mt-0"> Paul Flavius  <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-30">
+                  <div class="media">
+                    <div class="position-relative">
+                     <img class="img-fluid mr-15 avatar-small" src="images/team/03.jpg" alt="">
+                  </div>
+                    <div class="media-body">
+                       <h6 class="mt-0">Anne Smith <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                    </div>
+                  </div>
+                </li>
+                <li class="mb-30">
+                  <div class="media">
+                    <div class="position-relative">
+                     <img class="img-fluid mr-15 avatar-small" src="images/team/04.jpg" alt="">
+                     <i class="avatar-online bg-success"></i>
+                    </div>
+                    <div class="media-body">
+                       <h6 class="mt-0">Sara Lisbon <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                    </div>
+                  </div>
+                </li>
+                <li>
+                  <div class="media">
+                    <div class="position-relative">
+                     <img class="img-fluid mr-15 avatar-small" src="images/team/05.jpg" alt="">
+                    </div>
+                    <div class="media-body">
+                       <h6 class="mt-0"> Paul Flavius <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics">
+            <div class="card-body">
+              <h5 class="card-title pb-0 border-0">Last Transactions </h5>
+              <!-- action group -->
+              <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> View history</a>
+                  <a class="dropdown-item" href="#"><i class="text-success ti-thumb-up"></i> Profit</a>
+                </div>
+              </div>
+              <div class="scrollbar max-h-350">
+               <div class="table-responsive">
+                <table class="table center-aligned-table mb-0">
+                  <tbody>
+                  <tr>
+                    <td><i class="fa fa-circle text-success"></i></td>
+                    <td>Advertising</td>
+                    <td>12 Jan 2017</td>
+                    <td class="text-success">+$230</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-circle text-info"></i></td>
+                    <td>Support licence</td>
+                    <td>15 Jan 2017</td>
+                    <td class="text-danger">-$430</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-circle text-warning"></i></td>
+                    <td>Extended licence</td>
+                    <td>10 Mar 2017</td>
+                    <td class="text-success">+$140</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-circle text-danger"></i></td>
+                    <td>Advertising</td>
+                    <td>12 Mar 2017</td>
+                    <td class="text-danger">-$230</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-circle text-dark"></i></td>
+                    <td>New plugins added</td>
+                    <td>14 May 2017</td>
+                    <td class="text-success">+$162</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-circle text-info"></i></td>
+                    <td>Google Inc.</td>
+                    <td>20 May 2017</td>
+                    <td class="text-success">+$561</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-circle text-success"></i></td>
+                    <td>Facebook Ad</td>
+                    <td>30 Jun 2017</td>
+                    <td class="text-success">+$566</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-circle text-warning"></i></td>
+                    <td>New sale</td>
+                    <td>25 Mar 2017</td>
+                    <td class="text-success">+$546</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-circle text-danger"></i></td>
+                    <td>Advertising</td>
+                    <td>10 Oug 2017</td>
+                    <td class="text-danger">-$326</td>
+                  </tr>
+                </tbody>
+               </table>
+              </div>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+         <div class="card card-statistics h-100">
+           <div class="card-body">
+             <h5 class="card-title">Daily feed </h5>
+             <div class="scrollbar max-h-320">
+               <ul class="list-unstyled">
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="images/team/01.jpg" alt="">
+                    <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">Martin smith <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative clearfix">
+                    <img class="img-fluid mr-15 avatar-small" src="images/team/01.jpg" alt="">
+                    <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">Martin smith <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                        <div class="mt-10 clearfix">
+                         <a class="text-info" href="#"> <i class="fa fa-thumbs-up p-2"></i> Like </a>
+                         <a class="text-info" href="#"> <i class="fa fa-heart-o p-2"></i> Like </a>
+                        </div>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/01.jpg" alt="">
+                      <i class="avatar-online bg-danger"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">Martin smith <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                       <div class="bg-light p-3 mt-20">
+                         <p>It is truly amazing the damage that we, as parents, can inflict on our children. So why do? for future projects. </p>
+                       </div>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/01.jpg" alt="">
+                      <i class="avatar-online bg-danger"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">Martin smith <small class="float-right">6 days ago</small></h6>
+                       <p>Create tailor-cut websites with the exclusive</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 mb-30">
+           <div class="card card-statistics h-100">
+           <div class="card-body">
+             <h5 class="card-title pb-0 border-0">Last Billings </h5>
+             <!-- action group -->
+              <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-success ti-files"></i> Approved</a>
+                  <a class="dropdown-item" href="#"><i class="text-warning ti-pencil-alt"></i> Pending</a>
+                  <a class="dropdown-item" href="#"><i class="text-danger ti-user"></i> Rejected</a>
+                  <a class="dropdown-item" href="#"><i class="text-secondary ti-reload"></i> Refresh</a>
+                </div>
+              </div>
+              <div class="table-responsive">
+              <table class="table center-aligned-table mb-0">
+                <thead>
+                  <tr class="text-dark">
+                    <th>Order No</th>
+                    <th>Product Name</th>
+                    <th>Purchased On</th>
+                    <th>Shipping Status</th>
+                    <th>Payment Method</th>
+                    <th>Payment Status</th>
+                    <th></th>
+                    <th></th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>034</td>
+                    <td>Iphone 7</td>
+                    <td>12 May 2017</td>
+                    <td>Dispatched</td>
+                    <td>Credit card</td>
+                    <td><label class="badge badge-success">Approved</label></td>
+                    <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
+                    <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
+                  </tr>
+                  <tr>
+                    <td>035</td>
+                    <td>Galaxy S8</td>
+                    <td>15 May 2017</td>
+                    <td>Dispatched</td>
+                    <td>Internet banking</td>
+                    <td><label class="badge badge-warning">Pending</label></td>
+                    <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
+                    <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
+                  </tr>
+                  <tr>
+                    <td>036</td>
+                    <td>Amazon Echo</td>
+                    <td>17 May 2017</td>
+                    <td>Dispatched</td>
+                    <td>Credit card</td>
+                    <td><label class="badge badge-success">Approved</label></td>
+                    <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
+                    <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
+                  </tr>
+                  <tr>
+                    <td>037</td>
+                    <td>Google Pixel</td>
+                    <td>17 May 2017</td>
+                    <td>Dispatched</td>
+                    <td>Cash on delivery</td>
+                    <td><label class="badge badge-danger">Rejected</label></td>
+                    <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
+                    <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
+                  </tr>
+                  <tr>
+                    <td>038</td>
+                    <td>Mac Mini</td>
+                    <td>19 May 2017</td>
+                    <td>Dispatched</td>
+                    <td>Debit card</td>
+                    <td><label class="badge badge-success">Approved</label></td>
+                    <td><a href="#" class="btn btn-outline-success btn-sm">View Order</a></td>
+                    <td><a href="#" class="btn btn-outline-warning btn-sm">Cancel</a></td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+         <div class="card card-statistics h-100 admin-followers">
+           <div class="card-body">
+             <h5 class="card-title">Followers </h5>
+             <div class="scrollbar max-h-350">
+              <ul class="list-unstyled">
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="images/team/05.jpg" alt="">
+                    <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <div class="">
+                          <a class="button button-border gray small border float-right" href="#">Follow</a>
+                       </div> 
+                       <h6 class="mt-0 text-info">Martin smith </h6>
+                       <p>@potenzauser</p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative clearfix">
+                    <img class="img-fluid mr-15 avatar-small" src="images/team/02.jpg" alt="">
+                    <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <div class="">
+                          <a class="button button-border gray small border float-right" href="#">Follow</a>
+                       </div> 
+                       <h6 class="mt-0 text-warning">Paul Flavius </h6>
+                       <p>@potenzauser</p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/03.jpg" alt="">
+                      <i class="avatar-online bg-danger"></i>
+                   </div> 
+                    <div class="media-body">
+                       <div class="">
+                          <a class="button gray small border float-right" href="#">Following <i class="fa fa-check"></i></a>
+                       </div> 
+                       <h6 class="mt-0 text-danger">Anne Smith</h6>
+                       <p>@potenzauser</p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/04.jpg" alt="">
+                      <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <div class="">
+                          <a class="button button-border gray small border float-right" href="#">Follow</a>
+                       </div> 
+                       <h6 class="mt-0 text-info">Sara Lisbon </h6>
+                       <p>@potenzauser</p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+           <div class="card card-statistics h-100">
+           <div class="card-body">
+             <h5 class="card-title"> New comments </h5>
+             <!-- action group -->
+             <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-success ti-thumb-up"></i> Mark As Read</a>
+                  <a class="dropdown-item" href="#"><i class="text-danger ti-trash"></i> Delete all</a>
+                </div>
+              </div>
+             <div class="scrollbar max-h-350">
+              <ul class="list-unstyled">
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="images/team/05.jpg" alt="">
+                    <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0 ">Martin smith <small class="float-right">Just now</small> </h6>
+                       <p>Create tailor-cut websites with the exclusive </p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative clearfix">
+                    <img class="img-fluid mr-15 avatar-small" src="images/team/02.jpg" alt="">
+                    <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0 ">Paul Flavius  <small class="float-right">Just now</small> </h6>
+                       <p>Create tailor-cut websites with the exclusive </p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/03.jpg" alt="">
+                      <i class="avatar-online bg-danger"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0 ">Anne Smith  <small class="float-right">30 min ago</small> </h6>
+                       <p>Create tailor-cut websites with the exclusive </p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/04.jpg" alt="">
+                      <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0 ">Sara Lisbon  <small class="float-right">1 hours ago</small> </h6>
+                       <p>Create tailor-cut websites with the exclusive </p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/04.jpg" alt="">
+                      <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0 ">Sara Lisbon  <small class="float-right">10 hours ago</small> </h6>
+                       <p>Create tailor-cut websites with the exclusive </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+           <div class="card card-statistics h-100">
+           <div class="card-body">
+             <h5 class="card-title"> Twitter Feed </h5>
+             <!-- action group -->
+              <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-info ti-twitter"></i> Twitter Profile</a>
+                  <a class="dropdown-item" href="#"><i class="text-success ti-pencil-alt"></i> Re-tweet</a>
+                </div>
+              </div>
+             <div class="scrollbar max-h-350">
+               <ul class="list-unstyled">
+                 <li class="mb-15">
+                    <div class="section-field textarea clearfix">
+                     <textarea class="form-control input-message" placeholder="Comment*" rows="4" name="message"></textarea>
+                     <a class="button small gray mt-10 float-right" href="#">Tweet </a>
+                   </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative clearfix">
+                    <img class="img-fluid mr-15 avatar-small" src="images/team/02.jpg" alt="">
+                    <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0 ">Paul Flavius  <small class="float-right">Just now</small> </h6>
+                       <p>Create tailor-cut websites with the exclusive </p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/03.jpg" alt="">
+                      <i class="avatar-online bg-danger"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0 ">Anne Smith  <small class="float-right">30 min ago</small> </h6>
+                       <p>Create tailor-cut websites with the exclusive </p>
+                    </div>
+                  </div>
+                  <div class="divider mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/team/04.jpg" alt="">
+                      <i class="avatar-online bg-success"></i>
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0 ">Sara Lisbon  <small class="float-right">1 hours ago</small> </h6>
+                       <p>Create tailor-cut websites with the exclusive </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+             </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+         <div class="card card-statistics h-100">
+             <div class="card-body">
+              <h5 class="card-title">Best Selling Items</h5>
+               <ul class="list-unstyled">
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative">
+                    <img class="img-fluid mr-15 avatar-small" src="images/item/01.png" alt="">
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">Car dealer <span class="float-right text-danger"> 8,561</span>  </h6>
+                       <p>Automotive WordPress Theme </p>
+                    </div>
+                  </div>
+                  <div class="divider dotted mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative clearfix">
+                    <img class="img-fluid mr-15 avatar-small" src="images/item/02.png" alt="">
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">Webmin  <span class="float-right text-warning"> 6,213</span>  </h6>
+                       <p>Multi-purpose HTML5 Template </p>
+                    </div>
+                  </div>
+                  <div class="divider dotted mt-15"></div>
+                </li>
+                <li class="mb-15">
+                  <div class="media">
+                   <div class="position-relative clearfix">
+                    <img class="img-fluid mr-15 avatar-small" src="images/item/04.png" alt="">
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">Sam Martin  <span class="float-right text-warning"> 6,213</span>  </h6>
+                       <p>Personal vCard Resume WordPress Theme </p>
+                    </div>
+                  </div>
+                  <div class="divider dotted mt-15"></div>
+                </li>
+                <li>
+                  <div class="media">
+                   <div class="position-relative">
+                      <img class="img-fluid mr-15 avatar-small" src="images/item/03.png" alt="">
+                   </div> 
+                    <div class="media-body">
+                       <h6 class="mt-0">The corps  <span class="float-right text-success"> 2,926</span>  </h6>
+                       <p> Multi-Purpose WordPress Theme </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+             </div>
+           </div>
+       </div>
+        <div class="col-xl-8 mb-30">
+           <div class="card card-statistics h-100">
+           <div class="card-body">
+             <h5 class="card-title border-0 pb-0">Project Progress </h5>
+             <!-- action group -->
+              <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> Add task</a>
+                  <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i> Edit Project</a>
+                </div>
+              </div>
+              <div class="table-responsive">
+              <table class="table center-aligned-table mb-0">
+                <thead>
+                  <tr class="text-dark">
+                    <th>ID</th>
+                    <th>Project</th>
+                    <th>Priority</th>
+                    <th>Status</th>
+                    <th>Chart</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>01</td>
+                    <td>Iphone 7</td>
+                    <td class="text-info">12 May 2017</td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>Chart</td>
+                  </tr>
+                  <tr>
+                    <td>02</td>
+                    <td>Galaxy S8</td>
+                    <td class="text-warning">15 May 2017</td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-warning" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>Chart</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>Amazon Echo</td>
+                    <td class="text-danger">17 May 2017</td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>Chart</td>
+                  </tr>
+                  <tr>
+                    <td>04</td>
+                    <td>Google Pixel</td>
+                    <td class="text-success">17 May 2017</td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-success" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>Chart</td>
+                  </tr>
+                  <tr>
+                    <td>05</td>
+                    <td>Mac Mini</td>
+                    <td class="text-dark">19 May 2017</td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-dark" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>Chart</td>
+                  </tr>
+                  <tr>
+                    <td>01</td>
+                    <td>Iphone 7</td>
+                    <td class="text-info">12 May 2017</td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-info" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>Chart</td>
+                  </tr>
+                  <tr>
+                    <td>03</td>
+                    <td>Amazon Echo</td>
+                    <td class="text-danger">17 May 2017</td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-danger" role="progressbar" style="width: 50%" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                    <td>Chart</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-8 mb-30">
+           <div class="card card-statistics h-100">
+           <div class="card-body">
+             <h5 class="card-title pb-0 border-0">Members Profiles </h5>
+              <div class="table-responsive">
+              <table class="table center-aligned-table mb-0">
+                <thead>
+                  <tr class="text-dark">
+                    <th>Member</th>
+                    <th>Name</th>
+                    <th>Earnings</th>
+                    <th>Sales</th>
+                    <th>Reviews </th>
+                    <th>Progress </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td> <img class="img-fluid avatar-small" src="images/team/05.jpg" alt=""> </td>
+                    <td>Iphone</td>
+                    <td class="text-info">$520</td>
+                    <td>250</td>
+                    <td>
+                      <ul class="list-unstyled">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-info" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> <img class="img-fluid avatar-small" src="images/team/06.jpg" alt=""> </td>
+                    <td>Galaxy S8</td>
+                    <td class="text-warning">$340</td>
+                    <td>100</td>
+                    <td>
+                      <ul class="list-unstyled">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-warning" role="progressbar" style="width: 64%" aria-valuenow="64" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> <img class="img-fluid avatar-small" src="images/team/07.jpg" alt=""> </td>
+                    <td>Amazon Echo</td>
+                    <td class="text-danger">$50</td>
+                    <td>50</td>
+                    <td>
+                      <ul class="list-unstyled">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-danger" role="progressbar" style="width: 68%" aria-valuenow="68" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> <img class="img-fluid avatar-small" src="images/team/08.jpg" alt=""> </td>
+                    <td>Google Pixel</td>
+                    <td class="text-success">$230</td>
+                    <td>80</td>
+                    <td>
+                      <ul class="list-unstyled">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-success" role="progressbar" style="width: 90%" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td> <img class="img-fluid avatar-small" src="images/team/09.jpg" alt=""> </td>
+                    <td>Mac Mini</td>
+                    <td class="text-dark">$1020</td>
+                    <td>54</td>
+                    <td>
+                      <ul class="list-unstyled">
+                        <li class="list-inline-item"><i class="fa fa-star"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-half-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                        <li class="list-inline-item"><i class="fa fa-star-o"></i></li>
+                      </ul>
+                    </td>
+                    <td>
+                      <div class="progress progress-small mt-2">
+                        <div class="skill2-bar bg-dark" role="progressbar" style="width: 40%" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100"></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-4 mb-30">
+            <div class="card card-statistics h-100">
+            <div class="card-body">
+                <h5 class="card-title">Chat </h5>
+                <!-- action group -->
+                <div class="btn-group info-drop">
+                  <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                  <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#"><i class="text-primary ti-reload"></i> Clear chat</a>
+                    <a class="dropdown-item" href="#"><i class="text-danger ti-trash"></i> Delete</a>
+                  </div>
+                </div>
+                <div class="scrollbar max-h-440">
+                 <div class="chats">
+                   <div class="chat-wrapper clearfix">
+                      <div class="chat-avatar">
+                        <img class="img-fluid avatar-small" src="images/team/05.jpg" alt="">
+                      </div>
+                      <div class="chat-body p-3">
+                         <p>It is truly amazing the damage that we, as parents, can inflict on our children. So why do?</p>
+                      </div>
+                   </div>
+                   <div class="chat-wrapper chat-me clearfix">
+                      <div class="chat-body p-3">
+                         <p>It's always nice to browse some nice and clean websites.</p>
+                      </div>
+                   </div>
+                   <span class="time d-block mt-20px mb-20 text-center text-gray">3:15PM </span>
+                   <div class="chat-wrapper clearfix">
+                      <div class="chat-avatar">
+                        <img class="img-fluid avatar-small" src="images/team/05.jpg" alt="">
+                      </div>
+                      <div class="chat-body bg-light p-3">
+                         <p>This is perhaps the single biggest obstacle that all of us must overcome in order to be successful.</p>
+                      </div>
+                   </div>
+                   <div class="chat-wrapper chat-me clearfix">
+                      <div class="chat-body p-3">
+                         <p>In the majority of cases, the cause is a well-meaning but.</p>
+                      </div>
+                   </div>
+                   <div class="chat-wrapper chat-me clearfix">
+                      <div class="chat-body p-3">
+                         <p>Get the oars in the water and start rowing.</p>
+                      </div>
+                   </div>
+                   <span class="time d-block mt-20px mb-20 text-center text-gray">3:15PM </span>
+                    <div class="chat-wrapper clearfix">
+                      <div class="chat-avatar">
+                        <img class="img-fluid avatar-small" src="images/team/05.jpg" alt="">
+                      </div>
+                      <div class="chat-body bg-light p-3">
+                         <p>It is truly amazing the damage that we, as parents, can inflict on our children. So why do?</p>
+                      </div>
+                   </div>
+                 </div>
+                </div>
+                <div class="chats">
+                   <div class="chat-wrapper mb-0 mt-10 clearfix">
+                       <div class="chat-input">
+                        <div class="chat-input-icon">
+                         <a class="text-muted" href="#"> <i class="fa fa-smile-o"></i> </a>
+                        </div>                               
+                        <textarea class="form-control input-message scrollbar" placeholder="Type here...*" rows="2" name="message"></textarea>
+                      </div>
+                      <div class="chat-button">
+                       <a href="#"> <i class="ti-clip"></i></a>
+                     </div> 
+                   </div>
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+      <div class="row  mb-30">
+      <div class="col-12">
+        <div class="card card-statistics h-100">
+            <div class="card-body">
+              <div class="row">
+               <div class="col-xl-7">
+                <div id="world-map-markers" class="map-height"></div>
+               </div>
+               <div class="col-xl-5">
+                  <div class="table-responsive">
+                    <table class="table center-aligned-table mb-0">
+                        <thead>
+                          <tr class="text-dark">
+                            <th>No </th>
+                            <th>Contrary </th>
+                            <th>2016</th>
+                            <th>2017</th>
+                            <th>Change</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                          <td><i class="fa fa-circle text-success"></i></td>
+                          <td>USA</td>
+                          <td>2,009 </td>
+                          <td>5,230</td>
+                          <td>8.01% <i class="fa fa-level-up text-success"></i></td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa fa-circle text-info"></i></td>
+                          <td>India</td>
+                          <td>2,609</td>
+                          <td>2,430</td>
+                          <td>7.01% <i class="fa fa-level-down text-warning"></i></td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa fa-circle text-warning"></i></td>
+                          <td>Canada  </td>
+                          <td>3,409</td>
+                          <td>1,240</td>
+                          <td>6.04% <i class="fa fa-level-down text-warning"></i></td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa fa-circle text-danger"></i></td>
+                          <td>Australia</td>
+                          <td>5,709</td>
+                          <td>2,230</td>
+                          <td>4.04% <i class="fa fa-level-down text-warning"></i></td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa fa-circle text-dark"></i></td>
+                          <td>Germany </td>
+                          <td>5,662</td>
+                          <td>6,162</td>
+                          <td>6.06% <i class="fa fa-level-up text-success"></i></td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa fa-circle text-info"></i></td>
+                          <td>UK</td>
+                          <td>6,407</td>
+                          <td>7,561</td>
+                          <td>6.08% <i class="fa fa-level-up text-success"></i></td>
+                        </tr>
+                        <tr>
+                          <td><i class="fa fa-circle text-success"></i></td>
+                          <td>Other </td>
+                          <td>6,554</td>
+                          <td>7,566</td>
+                          <td>6.07% <i class="fa fa-level-up text-success"></i></td>
+                        </tr>
+                      </tbody>
+                    </table>
+                </div>
+              </div>
+             </div>
+            </div>
+          </div>
+         </div>
+      </div>
+      <div class="row">
+        <div class="col-xl-4 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+              <h5 class="card-title">Latest post</h5>
+              <!-- action group -->
+              <div class="btn-group info-drop">
+                <button type="button" class="dropdown-toggle-split text-muted" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i class="ti-more"></i></button>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="#"><i class="text-primary ti-files"></i> Add Post</a>
+                  <a class="dropdown-item" href="#"><i class="text-dark ti-pencil-alt"></i> Edit Post</a>
+                  <a class="dropdown-item" href="#"><i class="text-success ti-eye"></i> View Blog</a>
+                </div>
+              </div>
+                <div class="blog-box blog-2">         
+                <img class="img-fluid w-100" src="images/blog/01.jpg" alt="">
+                 <div class="blog-info  pt-10">
+                  <span class="post-category"><a href="#">Business</a></span>
+                  <h4> <a href="#"> Does your life lack meaning</a></h4>
+                  <p class="mb-10">I truly believe Augustine’s words are true.</p>
+                  <span><i class="fa fa-calendar-check-o"></i> 21 April 2016 </span>
+                  </div>            
+                </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-8 mb-30">
+          <div class="card card-statistics h-100">
+            <div class="card-body">
+                <div class="tab nav-border" style="position: relative;">
+                  <div class="d-block d-md-flex justify-content-between">
+                    <div class="d-block w-100">
+                      <h5 class="card-title">Best Sellers</h5>
+                    </div>
+                    <div class="d-block d-md-flex nav-tabs-custom">
+                      <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <li class="nav-item">
+                          <a class="nav-link active show" id="months-tab" data-toggle="tab" href="#months" role="tab" aria-controls="months" aria-selected="true"> Months</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" id="year-tab" data-toggle="tab" href="#year" role="tab" aria-controls="year" aria-selected="false">Year </a>
+                        </li>
+                      </ul>
+                     </div>
+                   </div>
+                    <div class="tab-content" id="myTabContent">
+                      <div class="tab-pane fade active show" id="months" role="tabpanel" aria-labelledby="months-tab">
+                        <div class="row mb-30">
+                           <div class="col-md-2 col-sm-6">
+                             <img class="img-fluid" src="images/blog/05.jpg" alt="">
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <h6 class="mb-0 sm-mt-5">Supercharge your motivation</h6>
+                              <p class="sm-mb-5 d-block">I truly believe Augustine’s words are true. </p> 
+                              <span class="mb-0">by - <b class="text-info">PotenzaUser</b></span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                            <h5 class="text-primary mb-0"><b>45,436</b></h5>
+                             <span>Sales</span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                             <h5 class="text-secondary mb-0"><b>$05,236</b></h5>
+                             <span>Revenue</span>
+                           </div>
+                          </div>
+                          <div class="row mb-30">
+                           <div class="col-md-2 col-sm-6">
+                             <img class="img-fluid" src="images/blog/02.jpg" alt="">
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <h6 class="mb-0 sm-mt-5">Helen keller a teller seller</h6>
+                              <p class="sm-mb-5 d-block">We also know those epic stories, those modern.</p> 
+                              <span class="mb-0">by - <b class="text-warning">WebminUser</b> </span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                            <h5 class="text-success mb-0"><b>23,462</b></h5>
+                             <span>Sales</span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                             <h5 class="text-danger mb-0"><b>$166</b></h5>
+                             <span>Revenue</span>
+                           </div>
+                          </div>
+                          <div class="row mb-30">
+                           <div class="col-md-2 col-sm-6">
+                             <img class="img-fluid" src="images/blog/03.jpg" alt="">
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <h6 class="mb-0 sm-mt-5">The other virtues practice</h6>
+                              <p class="sm-mb-5 d-block">One of the most difficult aspects of achieving. </p> 
+                              <span class="mb-0">by - <b class="text-danger">TheCorps</b> </span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                            <h5 class="text-warning mb-0"><b>5,566</b></h5>
+                             <span>Sales</span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                             <h5 class="text-info mb-0"><b>$4,126</b></h5>
+                             <span>Revenue</span>
+                           </div>
+                          </div>
+                          <div class="row">
+                           <div class="col-md-2 col-sm-6">
+                             <img class="img-fluid" src="images/blog/04.jpg" alt="">
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <h6 class="mb-0 sm-mt-5">You will begin to realise</h6>
+                              <p class="sm-mb-5 d-block">Remind yourself you have nowhere to go except. </p> 
+                              <span class="mb-0">by - <b class="text-success">PGSinfotech</b> </span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                            <h5 class="text-dark mb-0"><b>5,446</b></h5>
+                             <span>Sales</span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                             <h5 class="text-success mb-0"><b>$436</b></h5>
+                             <span>Revenue</span>
+                           </div>
+                          </div>
+                        </div> 
+                      <div class="tab-pane fade" id="year" role="tabpanel" aria-labelledby="year-tab">
+                        <div class="row mb-30">
+                           <div class="col-md-2 col-sm-6">
+                             <img class="img-fluid" src="images/blog/09.jpg" alt="">
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <h6 class="mb-0 sm-mt-5">Walk out 10 years into</h6>
+                              <p class="sm-mb-5 d-block">Understanding the price and having the willingness to pay. </p> 
+                              <span class="mb-0">by - <b class="text-danger">TheZayka</b> </span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                            <h5 class="text-dark mb-0"><b>12,549</b></h5>
+                             <span>Sales</span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                             <h5 class="theme-color mb-0"><b>$1,656</b></h5>
+                             <span>Revenue</span>
+                           </div>
+                          </div>
+                        <div class="row mb-30">
+                           <div class="col-md-2 col-sm-6">
+                             <img class="img-fluid" src="images/blog/06.jpg" alt="">
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <h6 class="mb-0 sm-mt-5">Step out on to the path</h6>
+                              <p class="sm-mb-5 d-block">Success to you and then pull it out when you are.</p> 
+                              <span class="mb-0">by - <b class="text-info">CarDealer</b> </span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                            <h5 class="text-primary mb-0"><b>1,366</b></h5>
+                             <span>Sales</span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                             <h5 class="text-secondary mb-0"><b>$4,536</b></h5>
+                             <span>Revenue</span>
+                           </div>
+                          </div>
+                          <div class="row mb-30">
+                           <div class="col-md-2 col-sm-6">
+                             <img class="img-fluid" src="images/blog/07.jpg" alt="">
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <h6 class="mb-0 sm-mt-5">Briefly imagine that you</h6>
+                              <p class="sm-mb-5 d-block">Motivators for your personality and your personal goals. </p> 
+                              <span class="mb-0">by - <b class="text-success">SamMartin</b> </span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                            <h5 class="text-success mb-0"><b>465</b></h5>
+                             <span>Sales</span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                             <h5 class="text-danger mb-0"><b>$499</b></h5>
+                             <span>Revenue</span>
+                           </div>
+                          </div>
+                          <div class="row">
+                           <div class="col-md-2 col-sm-6">
+                             <img class="img-fluid" src="images/blog/08.jpg" alt="">
+                           </div>
+                           <div class="col-md-6 col-sm-6">
+                              <h6 class="mb-0 sm-mt-5">You continue doing what</h6>
+                              <p class="sm-mb-5 d-block">The first thing to remember about success is that. </p> 
+                              <span class="mb-0">by - <b class="text-warning">Cosntro</b> </span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                            <h5 class="text-warning mb-0"><b>4,456</b></h5>
+                             <span>Sales</span>
+                           </div>
+                           <div class="col-md-2 col-sm-6 col-6 sm-mt-20">
+                             <h5 class="text-info mb-0"><b>$6,485</b></h5>
+                             <span>Revenue</span>
+                           </div>
+                          </div>
+                      </div>
+                    </div> 
+                </div>
+             </div>
+          </div>
+        </div>
+      </div>
+     <div class="calendar-main mb-30">
+    <div class="row">
+      <div class="col-lg-3">
+        <div class="row">
+            <div class="col-12 sm-mb-30">
+                <a href="#" data-toggle="modal" data-target="#add-category" class="btn btn-primary btn-block ripple m-t-20"><i class="fa fa-plus pr-2"></i> Create New</a>
+                <div id="external-events" class="m-t-20">
+                    <br>
+                    <p class="text-muted">Drag and drop your event or click in the calendar</p>
+                    <div class="external-event bg-success fc-event">
+                        <i class="fa fa-circle mr-2 vertical-middle"></i>New Theme Release
+                    </div>
+                    <div class="external-event bg-info fc-event">
+                        <i class="fa fa-circle mr-2 vertical-middle"></i>My Event
+                    </div>
+                    <div class="external-event bg-warning fc-event">
+                        <i class="fa fa-circle mr-2 vertical-middle"></i>Meet manager
+                    </div>
+                    <div class="external-event bg-danger fc-event">
+                        <i class="fa fa-circle mr-2 vertical-middle"></i>Create New theme
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <div class="col-lg-9">
+          <div id="calendar"></div>
+           <div class="modal" tabindex="-1" role="dialog" id="event-modal">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">Add New Event</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-label="Close"> <span aria-hidden="true">&times;</span></button>
+                      </div>
+                      <div class="modal-body p-20"></div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-default ripple" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success save-event ripple">Create event</button>
+                          <button type="button" class="btn btn-danger delete-event ripple" data-dismiss="modal">Delete</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- Modal Add Category -->
+          <div class="modal" tabindex="-1" role="dialog" id="add-category">
+              <div class="modal-dialog">
+                  <div class="modal-content">
+                      <div class="modal-header">
+                          <h5 class="modal-title">Add a category</h5>
+                          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+                      </div>
+                      <div class="modal-body p-20">
+                          <form>
+                              <div class="row">
+                                  <div class="col-md-6">
+                                      <label class="control-label">Category Name</label>
+                                      <input class="form-control form-white" placeholder="Enter name" type="text" name="category-name" />
+                                  </div>
+                                  <div class="col-md-6">
+                                      <label class="control-label">Choose Category Color</label>
+                                      <select class="form-control form-white" data-placeholder="Choose a color..." name="category-color">
+                                          <option value="success">Success</option>
+                                          <option value="danger">Danger</option>
+                                          <option value="info">Info</option>
+                                          <option value="primary">Primary</option>
+                                          <option value="warning">Warning</option>
+                                      </select>
+                                  </div>
+                              </div>
+                          </form>
+                      </div>
+                      <div class="modal-footer">
+                          <button type="button" class="btn btn-danger ripple" data-dismiss="modal">Close</button>
+                          <button type="button" class="btn btn-success ripple save-category" data-dismiss="modal">Save</button>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+ </div>
+ 
+  <!--=================================
+ wrapper -->
+      
+<!--=================================
+ footer -->
+
+    <footer class="bg-white p-4">
+      <div class="row">
+        <div class="col-md-6">
+          <div class="text-center text-md-left">
+              <p class="mb-0"> &copy; Copyright <span id="copyright"> <script>document.getElementById('copyright').appendChild(document.createTextNode(new Date().getFullYear()))</script></span>. <a href="#"> Webmin </a> All Rights Reserved. </p>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <ul class="text-center text-md-right">
+            <li class="list-inline-item"><a href="#">Terms & Conditions </a> </li>
+            <li class="list-inline-item"><a href="#">API Use Policy </a> </li>
+            <li class="list-inline-item"><a href="#">Privacy Policy </a> </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    </div> 
+  </div>
+</div>
+</div>
+      
+<!--=================================
+ footer -->
+
+
+
+<!--=================================
+ jquery -->
+
+<!-- jquery -->
+<script src="js/jquery-3.3.1.min.js"></script>
+
+<!-- plugins-jquery -->
+<script src="js/plugins-jquery.js"></script>
+
+<!-- plugin_path -->
+<script>var plugin_path = 'js/';</script>
+
+<!-- jvectormap -->
+<script src="js/jvectormap/jquery-jvectormap-2.0.3.min.js"></script> 
+<script src="js/jvectormap/jquery-jvectormap-world-mill-en.js"></script> 
+<script src="js/jvectormap/jquery-jvectormap-init.js"></script> 
+
+<!-- chart -->
+<script src="js/chart-init.js"></script>
+
+<!-- calendar -->
+<script src="js/calendar.init.js"></script>
+
+<!-- charts sparkline -->
+<script src="js/sparkline.init.js"></script>
+
+<!-- charts morris -->
+<script src="js/morris.init.js"></script>
+
+<!-- datepicker -->
+<script src="js/datepicker.js"></script>
+
+<!-- sweetalert2 -->
+<script src="js/sweetalert2.js"></script>
+
+<!-- toastr -->
+<script src="js/toastr.js"></script>
+
+<!-- validation -->
+<script src="js/validation.js"></script>
+
+<!-- lobilist -->
+<script src="js/lobilist.js"></script>
+
+<!-- custom -->
+<script src="js/custom.js"></script>
+ 
+</body>
+</html>
